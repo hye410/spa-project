@@ -1,0 +1,36 @@
+.newList{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-bottom : 60px;
+}
+
+.newList>figure{
+  width:calc(33.3333% - 1em);
+  margin: 0 0.5em;
+  position:relative;
+}
+
+.newList>figure>a>img{
+  margin-bottom : 30px;
+}
+
+.newList>figure>figcaption{
+  text-align: center;  
+
+}
+
+.newList>figure>figcaption a{
+  text-decoration: none;
+}
+
+.newList>figure>figcaption>dl dt{
+  font-weight: bold;
+  color : #242424;
+  margin-bottom : 8px;
+}
+
+.newList>figure>figcaption>dl dd{
+  color : rgb(216, 67, 41);
+  font-weight: bold;
+}

@@ -1,0 +1,73 @@
+
+.decision{
+  /* background-color: yellow; */
+  padding : 40px 5px 30px;
+  font-size: 14px;
+  border-bottom : 1px solid #cfc9c9d5;
+}
+
+.decision>dl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom:15px;
+}
+
+.decision>dl>dt{
+  font-weight: bold;
+}
+.decision>dl>dd:last-child{
+  margin-bottom: 10px;
+}
+
+.decision>dl>dd>span{
+  border : 1px solid #d6d2d2d5;
+  /* background-color: tan; */
+  width : 16px;
+  height: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  margin : 0 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+ul.priceSum{
+  display: flex;
+  padding: 30px 5px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+  border-bottom:  1px solid #cfc9c9d5;
+}
+
+ul.priceSum>li:first-child{
+  font-size: 14px;
+}
+
+ul.priceSum>li:last-child{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+figure.ProDetail p{
+  text-align: center;
+}
+
+figure.ProDetail p>button{
+  width : calc(50% - 1rem);
+  margin : 0 0.5rem;
+  padding : 10px 0;
+  border : 1px solid #cfc9c9d5;
+  cursor: pointer;
+}
+
+figure.ProDetail p>button:first-child{
+  background-color: #fff;
+}
+
+figure.ProDetail p>button:last-child{
+  background-color: #1a1a1a;
+  color:#fff;
+}

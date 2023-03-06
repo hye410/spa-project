@@ -1,0 +1,33 @@
+#box01{
+  width : 1800px;
+  margin : 0 auto;
+  /* overflow: hidden; */
+  position:relative;
+}
+
+#box01>ul{
+  width : 500%;
+  display: flex;
+  flex-wrap:wrap;
+
+}
+
+#box01>ul>li{
+  width : 20%;
+  height: 100%;
+}
+
+#box01>p{
+  position : absolute;
+  font-size: 50px;
+  top: calc(50% - 50px);
+  cursor: pointer;
+}
+
+#box01>p.prev{
+  left : 150px;
+}
+
+#box01>p.next{
+  right:100px;
+}
