@@ -7,12 +7,9 @@ function DetailOption({course}){
   const [selectedSize,setSelectedSize] = useState([]);
   const [selectedColor,setSelectedColor] = useState([]);
   const [list,setList] = useState([]);
-  // console.log(selectedColor)
-  function addOpt(selectedColor,selectedSize){
-    setList = [...list,list[selectedColor] = selectedSize]
-  }
+  
 
-  console.log(list)
+
     
 
   const changeProImg = (value) => {
@@ -63,7 +60,7 @@ function DetailOption({course}){
             defaultValue="selected"
             onChange={
               (event)=>{setSelectedSize(event.target.value);
-                        addOpt()
+                        
             }}>
               <option key="size" value="selected" disabled hidden>사이즈</option>
               {
