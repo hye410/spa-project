@@ -41,8 +41,7 @@ function Stores(){
       </div>
       <section className="stores">        
         <h4>매장검색결과(매장개수)</h4>
-        <StoreList
-        />
+   
 
       </section>
     </article>

@@ -58,12 +58,6 @@
           "02 샐러리그린티핑" : "/images/new/new2-2.jpg",
           "03 화이트네이비티핑" : "/images/new/new2-3.jpg"
         },
-      "imgByColor" : 
-        {
-          "01 라이트핑크티핑" : "/images/new/new2-1.jpg",
-          "02 샐러리그린티핑" : "/images/new/new2-2.jpg",
-          "03 화이트네이비티핑" : "/images/new/ne21-3.jpg"
-        },
       "imgByName" : 
         {
           "01 라이트핑크티핑" : "/images/new/new2-1.jpg",
@@ -94,12 +88,6 @@
     "imgByColor" : 
     {
       "01 베이지" : "/images/new/new3-1.jpg",
-      "02 라이트 그레이" : "/images/new/new3-2.jpg",
-      "03 블랙" : "/images/new/new3-3.jpg"
-    },
-    "imgByColor" : 
-    {
-      "01 베이지" : "/images/new/new3-2.jpg",
       "02 라이트 그레이" : "/images/new/new3-2.jpg",
       "03 블랙" : "/images/new/new3-3.jpg"
     },
