@@ -7,25 +7,28 @@ function DetailOption({course}){
   const [selectedColor,setSelectedColor] = useState('');
 
   const clear = {
+    id: 0,
     color : "",
     size : ""
   };
 
-  const [myOptList,setMyOptList] = useState(clear);
+  const [myOptList,setMyOptList] = useState([clear]);
 
-  function addOption(){
+  function addOption(selectedColor,selectedSize){
     const myOpt = {
+      id : myOptList.length,
       color : selectedColor,
       size : selectedSize
     };
-    setMyOptList(myOpt)
+    setMyOptList([...myOptList,myOpt])
   };
+
 
   const changeProImg = (value) => {
     setOptImg(course.imgByName[value]);
     setOptSize(course.sizes[value]);
   }
-  
+
   return(
     <figure className="ProDetail">
       <img src= {optImg} alt={course.name} />
@@ -42,7 +45,7 @@ function DetailOption({course}){
           <dd>
             <select name="color"
             onChange={(event)=>{changeProImg(event.target.value);
-              setMyOptList({...myOptList,color:event.target.value})
+              setSelectedColor(event.target.value);
                               }}                        
             defaultValue="selected">                             
               {course.colors.map((color,index)=>{
@@ -68,9 +71,10 @@ function DetailOption({course}){
             defaultValue="selected"
             onChange={
               (event)=>{
-                setMyOptList({...myOptList,size:event.target.value});
-                addOption();
-            }}>
+                addOption(selectedColor,event.target.value);
+                }}>
+                  {/* 여기서 selecteSize를 setting한 후에 addOption을 하게되면 동시에 event가 진행되어서 원하는대로 optList가 출력되지않음 . (한박자 뒤에 출력됨)
+                  그래서 여기서는 selectedSize를 받는 대신에 바로 매개변수값에 집어넣음 */}
               <option key="size" value="selected" disabled hidden>사이즈</option>
               {
               optSize.map((size,index) => 
@@ -89,7 +93,7 @@ function DetailOption({course}){
           {/* 반복문 */}
           <MyOption
           myOptList={myOptList}
-          
+          price = {course.price1}          
           />
         </div>
         

@@ -3,9 +3,10 @@ import { MdOutlineCancel } from "react-icons/md";
 import {  } from '../api/api';
 import './css/MyOption.css';
 
-function MyOption({price,formData}){
+function MyOption({price,myOptList}){
   const [count,setCount] = useState(1);
-
+//  console.log(myOptList[myOptList.length-1]);
+//  console.log(myOptList[myOptList.length]);
 
   return(  
     <>  

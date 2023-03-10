@@ -7,6 +7,7 @@ import { useState } from 'react';
 function New(){
   const [order,setOrder] = useState('date');
   const sortItems = newData.sort((a,b) => (order === 'price2') ? a[order] - b[order] : b[order]-a[order]);
+  const [toggle,setToggle] = useState(false);
 
   return(
     <>
@@ -19,16 +20,20 @@ function New(){
         {/* 로고 다시 만들기 */}        
         <div>
           <p>{newData.length} Items</p>
-          <div>
+          <div onClick={()=>setToggle(!toggle)}>
             정렬
-            <ul className="sort">
-              <li onClick={()=>setOrder('popularity')}>인기순</li>
-              <li onClick={()=>setOrder('recommendation')}>추천순</li>
-              <li onClick={()=>setOrder('date')}>최신순</li>
-              <li onClick={()=>setOrder('hits')}>조회순</li>
-              <li onClick={()=>setOrder('price1')}>높은 가격순</li>
-              <li onClick={()=>setOrder('price2')}>낮은 가격순</li>
-            </ul>
+            {
+              toggle == true ? 
+              <ul className="sort">
+                <li onClick={()=>setOrder('popularity')}>인기순</li>
+                <li onClick={()=>setOrder('recommendation')}>추천순</li>
+                <li onClick={()=>setOrder('date')}>최신순</li>
+                <li onClick={()=>setOrder('hits')}>조회순</li>
+                <li onClick={()=>setOrder('price1')}>높은 가격순</li>
+                <li onClick={()=>setOrder('price2')}>낮은 가격순</li>
+              </ul>
+              : null
+            }
           </div>
           </div>
           <div className="newList">
