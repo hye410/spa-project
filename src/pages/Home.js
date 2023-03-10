@@ -2,27 +2,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Nav2 from '../components/Nav2';
 import './css/Home.css';
-import $ from 'jquery';
+import jquery from './jquery/jqHome';
 import ReactPlayer from 'react-player';
 
 function Home(){
-
-  // jquery
-
-  const widthLi = $('#box01>ul>li').width();
-
-$(function(){
-  $('#box01>ul>li:last').prependTo('#box01>ul');
-  $('#box01>ul').css('margin-left','-'+widthLi+'px');
-
-})
-
-const swiper = ()=>{
-  $('#box01>ul').animate({marginLeft:'-='+widthLi+'px'},function(){
-    $('#box01>ul').css('margin-left','-'+widthLi+'px');
-    $('#box01>ul>li:first').appendTo('#box01>ul');
-  })
-}
 
   const navigate = useNavigate();
   return(
@@ -48,10 +31,30 @@ const swiper = ()=>{
     </div>
     <div id="box02">
       <ul>
-        <li><Link to="/outer"><img src="./images/home-outer.jpg" alt="outer" /></Link></li>
-        <li><Link to="/tops"><img src="./images/home-tops.jpg" alt="tops" /></Link></li>
-        <li><Link to="/pants"><img src="./images/home-pants.jpg" alt="pants" /></Link></li>
-        <li><Link to="/homewear"><img src="./images/home-homewear.jpg" alt="homewear" /></Link></li>
+        <li>
+          <Link to="/outer">
+            <span>Outer</span>
+            <img src="./images/home-outer.jpg" alt="outer" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/tops">
+            <span>Tops</span>
+            <img src="./images/home-tops.jpg" alt="tops" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/pants">
+            <span>Pants</span>
+            <img src="./images/home-pants.jpg" alt="pants" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/homewear">
+            <span>HomeWear</span>
+            <img src="./images/home-homewear.jpg" alt="homewear" />
+          </Link>
+        </li>
       </ul>
     </div>
     <div id="box03">
