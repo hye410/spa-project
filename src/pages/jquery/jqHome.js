@@ -6,6 +6,8 @@ $(function(){
   swiper();
   btn();
   fade();
+  // swiper2();
+  // setInterval(swiper2,3000);
 })
 
 function swiper(){
@@ -40,12 +42,12 @@ function timer(){
 
 function btn(){
   const liHeihgt = $('#box01>ul>li').height()/2;
-  $('#box01>ul').on('mouseenter',function(){
+  $('#box01>ul').on('mouseleave',function(){
     $('.swiper-button-prev').css('display','none');
     $('.swiper-button-next').css('display','none');
   });
 
-    $('#box01>ul').on('mouseleave',function(){
+    $('#box01>ul').on('mouseenter',function(){
       $('.swiper-button-prev').css('display','block');
       $('.swiper-button-next').css('display','block');
     });
@@ -61,4 +63,15 @@ function fade(){
   $('#box02>ul>li').on('mouseleave',function(){
     $('.ff').animate({display:'none'})
   })
-}
+};
+
+// function swiper2(){
+//   const ulWidth = $('div.swiper2 ul').width();
+//   $('div.swiper2 ul:last').prependTo('.swiper2');
+//   $('div.swiper2').css('margin-left','-'+ulWidth+'px');
+//   $('div.swiper2').animate({marginLeft:'-='+ulWidth+'px'},function(){
+//     $('.swiper2 ul:first').appendTo('.swiper2');
+//     $('.swiper2').css('margin-left','-'+ulWidth+'px');
+//   })
+// }
+

@@ -1,30 +1,34 @@
 import { CiSearch } from "react-icons/ci";
 import StoreList from "../components/StoreList";
 import './css/Store.css';
-import store from '../api/store2-5.json';
+import store from '../api/store2-2.json';
 import { useState } from "react";
 
 
 
 function Stores(){
-  const [storeList,setStoreList] = useState(store);
-  const [subArea,setSubArea] = useState('');
+  const [stores,setStores] = useState(store);
+  const [sub,setSub] = useState(0);
+  console.log(sub)
+  const [district,setDistrict] = useState('');
 
-  const sub = storeList.map(({area})=> area[subArea]);
-
+  function subArea(){
+    // console.log(stores[sub].district)
+    console.log(store)
+  }
 
   return(
     <article id="store">
       <h3>매장안내</h3>
       <div className="search">
-        <select name="area" onChange={(event)=>setSubArea(event.target.value)} >
-          <option value="서울">서울</option>
-          <option value="경기">경기</option>
-          <option value="인천">인천</option>
+
+        <select name="area" onChange={(event)=>{setSub(event.target.value);
+        subArea()
+        }}>
+
         </select>
         <select name="district">
           {
-            sub.map(sub => <option>{sub}</option>)
           }
         </select>
         <p>

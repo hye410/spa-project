@@ -1,23 +1,31 @@
 import { useState } from "react";
 import MyOption from '../components/MyOption';
 function DetailOption({course}){
-
   const [optImg,setOptImg] = useState(course.imgUrl);
   const [optSize,setOptSize] = useState([]);
-  const [selectedSize,setSelectedSize] = useState([]);
-  const [selectedColor,setSelectedColor] = useState([]);
-  const [list,setList] = useState([]);
-  
+  const [selectedSize,setSelectedSize] = useState('');
+  const [selectedColor,setSelectedColor] = useState('');
 
+  const clear = {
+    color : "",
+    size : ""
+  };
 
-    
+  const [myOptList,setMyOptList] = useState(clear);
+
+  function addOption(){
+    const myOpt = {
+      color : selectedColor,
+      size : selectedSize
+    };
+    setMyOptList(myOpt)
+  };
 
   const changeProImg = (value) => {
     setOptImg(course.imgByName[value]);
     setOptSize(course.sizes[value]);
   }
-
-
+  
   return(
     <figure className="ProDetail">
       <img src= {optImg} alt={course.name} />
@@ -34,7 +42,7 @@ function DetailOption({course}){
           <dd>
             <select name="color"
             onChange={(event)=>{changeProImg(event.target.value);
-                                setSelectedColor(event.target.value)
+              setMyOptList({...myOptList,color:event.target.value})
                               }}                        
             defaultValue="selected">                             
               {course.colors.map((color,index)=>{
@@ -59,8 +67,9 @@ function DetailOption({course}){
             name="size"
             defaultValue="selected"
             onChange={
-              (event)=>{setSelectedSize(event.target.value);
-                        
+              (event)=>{
+                setMyOptList({...myOptList,size:event.target.value});
+                addOption();
             }}>
               <option key="size" value="selected" disabled hidden>사이즈</option>
               {
@@ -79,8 +88,8 @@ function DetailOption({course}){
         <div className="decision">
           {/* 반복문 */}
           <MyOption
-          price = {course.price1}
-
+          myOptList={myOptList}
+          
           />
         </div>
         
@@ -89,8 +98,12 @@ function DetailOption({course}){
           <li>총금액</li>
         </ul>
         <p>
-          <button type="button">장바구니 담기</button>
-          <button type="button">바로 구매</button>
+          <button type="button">
+            장바구니 담기
+          </button>
+          <button type="button" >
+            바로 구매
+          </button>
         </p>
       </figcaption>
     </figure>

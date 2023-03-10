@@ -2,8 +2,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Nav2 from '../components/Nav2';
 import './css/Home.css';
-import jquery from './jquery/jqHome';
 import ReactPlayer from 'react-player';
+import './jquery/jqHome';
 
 function Home(){
 
@@ -78,9 +78,26 @@ function Home(){
     </div>    
     <div id="box04">
       <h3>Best 20</h3>
-      <ul>
-        <li></li>
-      </ul>
+      <div className='swiper2'>
+        <ul>
+          <li><img src="./images/best/best1.jpg" alt="bestItem1"/></li>
+          <li><img src="./images/best/best2.jpg" alt="bestItem2"/></li>
+          <li><img src="./images/best/best3.jpg" alt="bestItem3"/></li>
+          <li><img src="./images/best/best4.jpg" alt="bestItem4"/></li>
+        </ul>
+        <ul>
+          <li><img src="./images/best/best5.jpg" alt="bestItem5"/></li>
+          <li><img src="./images/best/best6.jpg" alt="bestItem6"/></li>
+          <li><img src="./images/best/best7.jpg" alt="bestItem7"/></li>
+          <li><img src="./images/best/best8.jpg" alt="bestItem8"/></li>
+        </ul>
+        <ul>
+          <li><img src="./images/best/best9.jpg" alt="bestItem9"/></li>
+          <li><img src="./images/best/best10.jpg" alt="bestItem10"/></li>
+          <li><img src="./images/best/best11.jpg" alt="bestItem11"/></li>
+          <li><img src="./images/best/best12.jpg" alt="bestItem12"/></li>
+        </ul>
+      </div>
     </div>
     </div>
   
