@@ -4,39 +4,54 @@ import './css/MyOption.css';
 
 
 
-function MyOption({price,myOptList,count}){
-  const [sumPrice,setSumPrice] = useState(0);
+function MyOption({price,myOptList,num}){
 
-  const myOptionList = myOptList.filter((option,index,arr)=>{
+
+  let myOptionList = myOptList.filter((option,index,arr)=>{
     return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
   });
 
+  const hap = myOptionList.length;
+  const [sumCount,setSumCount] = useState(0);
+
+  function minus(num){
+    if(num > 1){
+      num = num -1;
+      setSumCount(sumCount - 1);
+    }else{
+      num = 1;
+      setSumCount(price);
+    }
+  }
+
   return(  
     <> 
-    {myOptionList.map(option => {
+    {myOptionList.map((option,index) => {
+
       return(
-        <dl>
+        <dl key={index}>
           <dt>{option.color}  / {option.size}</dt>
           <dd id="count">
             <span
-            onClick={()=>{(option.num >1 ? option.num = option.num -1 : option.num = 1);setSumPrice(sumPrice -= option.num*price)}}
+            // onClick={()=>{(option.num > 1 ? (option.num = option.num -1) : option.num = option.num = 1); 
+            //   setSumCount(sumCount - 1)}}
+            onClick={()=>{minus(option.num)}}
             >-</span>
               {option.num}
             <span
-            onClick={()=>{option.num = option.num + 1; setSumPrice(sumPrice += option.num * price)}}>
-              
+            onClick={()=>{option.num = option.num += 1; setSumCount(sumCount + 1)}}
+            >              
               +
             </span>
           </dd>
-          <dd>{(option.num * price).toLocaleString('KO-kr')+'원'
-          }</dd>
+          <dd>{(price*option.num).toLocaleString('KO-kr')+'원'}</dd>
           <dd><MdOutlineCancel /></dd>
         </dl>
       )
     })}
             <ul className="priceSum">
           <li>총가격</li>
-          <li>{sumPrice}</li>
+          <li>{((hap + sumCount)*price).toLocaleString('KO-kr')+'원'}</li>
         </ul>
     </>
   )

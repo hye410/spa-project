@@ -22,7 +22,7 @@ function ProductDetail(){
         {course.kind}/{course.name}
       </h3>
       <DetailOption
-      key={course.id}      
+      key={course.id}     
       course = {course}/>
       <section className="detail">
         <h4>상품상세 / 배송 및 반품 / 상품리뷰</h4>

@@ -28,15 +28,16 @@ function DetailOption({course}){
       size : selectedSize,
       num : 1
     };
-    setMyOptList([...myOptList,myOpt])
+    setMyOptList([...myOptList,myOpt]);
   };
+    
+
 
 
   const changeProImg = (value) => {
     setOptImg(course.imgByName[value]);
     setOptSize(course.sizes[value]);
   }
-
 
 
   return(
@@ -61,7 +62,7 @@ function DetailOption({course}){
               {course.colors.map((color,index)=>{
                 return(
                   <>
-                  <option key="color" value="selected" disabled hidden>색상</option>                             
+                  {/* <option key="color" value="selected" disabled hidden>색상</option>                              */}
                   <option
                   key={index}
                   value={color}
@@ -86,7 +87,7 @@ function DetailOption({course}){
                 >
                   {/* 여기서 selectedSize를 setting한 후에 addOption을 하게되면 동시에 event가 진행되어서 원하는대로 optList가 출력되지않음 . (한박자 뒤에 출력됨)
                   그래서 여기서는 selectedSize를 받는 대신에 바로 매개변수값에 집어넣음 */}
-              <option key="size" value="selected" disabled hidden>사이즈</option>
+              {/* <option key="size" value="selected" disabled hidden>사이즈</option> */}
               {
               optSize.map((size,index) => 
               <option
@@ -104,7 +105,8 @@ function DetailOption({course}){
           {/* 반복문 */}
           <MyOption
           myOptList = {myOptList}
-          price = {course.price1}      
+          price = {course.price1}
+          num = {course.num}
           />
         </div>
         

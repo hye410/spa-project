@@ -11,6 +11,7 @@
     "date" : 1677474567522,
     "popularity" : 15354,
     "course" : "detail_new_01",
+    "num" : 1,
     "detailImg" : "/images/new/new1-detail.jpg",
     "colors" : ["01 화이트+핑크STR","02 화이트+라이트헤더그레이STR","03 화이트+베이비블루STR"],
     "sizes" : 
@@ -44,6 +45,7 @@
     "date" : 1677474564522,
     "popularity" : 57874,
     "course" : "detail_new_02",
+    "num" : 1,
     "detailImg" : "/images/new/new2-detail.jpg",
     "colors" : ["01 라이트핑크티핑","02 샐러리그린티핑","03 화이트네이비티핑"],
     "sizes" : 
@@ -76,7 +78,8 @@
     "kind" : "Tops",
     "date" : 1677474314522,
     "popularity" : 4573,
-    "course" : "detail_new_03",    
+    "course" : "detail_new_03", 
+    "num" : 1,   
     "detailImg" : "/images/new/new3-detail.jpg",
     "colors" : ["01 베이지","02 라이트 그레이","03 블랙"],
     "sizes" : 
