@@ -15,4 +15,3 @@ export function addToCart(courseDetail){
 export function getCartList(){
   return newData.filter((data) => addedItem[data.course])
 }
-

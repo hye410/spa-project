@@ -1,35 +1,43 @@
 import { useEffect, useState } from "react";
 import { MdOutlineCancel } from "react-icons/md";
-import {  } from '../api/api';
 import './css/MyOption.css';
 
-function MyOption({price,myOptList}){
-  const [count,setCount] = useState(1);
-//  console.log(myOptList[myOptList.length-1]);
-//  console.log(myOptList[myOptList.length]);
+
+
+function MyOption({price,myOptList,count}){
+  const [sumPrice,setSumPrice] = useState(0);
+
+  const myOptionList = myOptList.filter((option,index,arr)=>{
+    return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
+  });
 
   return(  
-    <>  
-    <dl>
-    <dt> 상품명 / 선택한 사이즈</dt>
-    <dd>
-      <span onClick={()=>{count > 1 ? setCount(count - 1) : setCount(1)}}>-</span>
-        {count}
-      <span onClick={()=>setCount(count + 1)}>+</span>
-    </dd>
-   <dd>{(price*count).toLocaleString('KO-KR')}원</dd>
-    <dd><MdOutlineCancel /></dd>
-    </dl>
+    <> 
+    {myOptionList.map(option => {
+      return(
         <dl>
-        <dt>선택한 상품명 / 선택한 사이즈</dt>
-        <dd>
-          <span onClick={()=>{count > 1 ? setCount(count - 1) : setCount(1)}}>-</span>
-            {count}
-          <span onClick={()=>setCount(count + 1)}>+</span>
-        </dd>
-       <dd>{(price*count).toLocaleString('KO-KR')}원</dd>
-        <dd><MdOutlineCancel /></dd>
+          <dt>{option.color}  / {option.size}</dt>
+          <dd id="count">
+            <span
+            onClick={()=>{(option.num >1 ? option.num = option.num -1 : option.num = 1);setSumPrice(sumPrice -= option.num*price)}}
+            >-</span>
+              {option.num}
+            <span
+            onClick={()=>{option.num = option.num + 1; setSumPrice(sumPrice += option.num * price)}}>
+              
+              +
+            </span>
+          </dd>
+          <dd>{(option.num * price).toLocaleString('KO-kr')+'원'
+          }</dd>
+          <dd><MdOutlineCancel /></dd>
         </dl>
+      )
+    })}
+            <ul className="priceSum">
+          <li>총가격</li>
+          <li>{sumPrice}</li>
+        </ul>
     </>
   )
 }
