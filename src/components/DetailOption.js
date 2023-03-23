@@ -7,16 +7,8 @@ function DetailOption({course}){
   const [optImg,setOptImg] = useState(course.imgUrl);
   const [optSize,setOptSize] = useState([]);
   const [selectedColor,setSelectedColor] = useState('');
-  const [selectedSize,setSelectedSize] = useState('');
+  // const [selectedSize,setSelectedSize] = useState('');
 
-  // const clear = {
-  //   // id: 0,
-  //   color : "",
-  //   size : ""
-    
-  // };
-
-  // const [myOptList,setMyOptList] = useState([clear]);
 
   const [myOptList,setMyOptList] = useState([]);
 
@@ -31,7 +23,9 @@ function DetailOption({course}){
     setMyOptList([...myOptList,myOpt]);
   };
     
-
+  const myOptionList = myOptList.filter((option,index,arr)=>{
+    return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
+  });
 
 
   const changeProImg = (value) => {
@@ -104,16 +98,11 @@ function DetailOption({course}){
         <div className="decision">
           {/* 반복문 */}
           <MyOption
-          myOptList = {myOptList}
-          price = {course.price1}
-          num = {course.num}
+          myOptionList = {myOptionList}
+          price = {course.price1}          
           />
         </div>
         
-        {/* <ul className="priceSum">
-          <li>총가격</li>
-          <li>총금액</li>
-        </ul> */}
         <p>
           <button type="button">
             장바구니 담기

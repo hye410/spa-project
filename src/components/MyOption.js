@@ -4,42 +4,39 @@ import './css/MyOption.css';
 
 
 
-function MyOption({price,myOptList,num}){
+function MyOption({price,myOptionList}){
 
 
-  let myOptionList = myOptList.filter((option,index,arr)=>{
-    return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
-  });
-
+  // let myOptionList = myOptList.filter((option,index,arr)=>{
+  //   return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
+  // });
   const hap = myOptionList.length;
   const [sumCount,setSumCount] = useState(0);
-
-  function minus(num){
-    if(num > 1){
-      num = num -1;
-      setSumCount(sumCount - 1);
-    }else{
-      num = 1;
-      setSumCount(price);
-    }
-  }
-
+  // console.log(myOptionList)
   return(  
     <> 
     {myOptionList.map((option,index) => {
-
       return(
         <dl key={index}>
           <dt>{option.color}  / {option.size}</dt>
           <dd id="count">
             <span
-            // onClick={()=>{(option.num > 1 ? (option.num = option.num -1) : option.num = option.num = 1); 
-            //   setSumCount(sumCount - 1)}}
-            onClick={()=>{minus(option.num)}}
-            >-</span>
+            onClick={function(){
+              if(option.num>1){
+                option.num = option.num -= 1;
+                // setNum(option.num);
+                setSumCount(sumCount - 1);
+              }else{
+                option.num = 1;
+                // setNum(option.num);
+                setSumCount(sumCount);
+              }
+            }}>
+              -</span>
               {option.num}
             <span
-            onClick={()=>{option.num = option.num += 1; setSumCount(sumCount + 1)}}
+            // onClick={()=>{option.num = option.num += 1}}
+            onClick={()=>{option.num = option.num += 1; setSumCount(sumCount + 1);}}          
             >              
               +
             </span>
@@ -49,7 +46,7 @@ function MyOption({price,myOptList,num}){
         </dl>
       )
     })}
-            <ul className="priceSum">
+        <ul className="priceSum">
           <li>총가격</li>
           <li>{((hap + sumCount)*price).toLocaleString('KO-kr')+'원'}</li>
         </ul>

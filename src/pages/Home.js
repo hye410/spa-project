@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import Nav2 from '../components/Nav2';
 import './css/Home.css';
 import './jquery/jqHome';
+import { TfiAngleLeft,TfiAngleRight } from "react-icons/tfi";
 
 function Home(){
 
@@ -18,8 +19,8 @@ function Home(){
         <li><Link to="/event01"><img src="./images/event1.jpg" alt="단체티이벤트" /></Link></li>
         <li><Link to="/event02"><img src="./images/event2.jpg" alt="모델명맞히기" /></Link></li>
       </ul>
-      <p className="prev">prev</p>
-      <p className="next">next</p>
+      <p className="prev"><TfiAngleLeft /></p>
+      <p className="next"><TfiAngleRight /></p>
     </div>
     <div id="box02">
       <ul>

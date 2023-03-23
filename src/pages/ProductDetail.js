@@ -5,12 +5,24 @@ import Review from '../components/Review';
 import './css/ProductDetail.css';
 import { Link, useParams } from 'react-router-dom';
 import { courseByDetail } from '../api/api';
+import { useState } from 'react';
 
 function ProductDetail(){
-
+  const[toggle,setToggle] = useState(false);
   const {courseDetail} = useParams();
   const course = courseByDetail(courseDetail);
-  // console.log(course)
+  const [sortBy,setSortBy] = useState('date');
+
+const sumRating = course.review.reduce((acc,{rating1})=>{
+  return acc = acc+= rating1
+},0)
+
+const averageRating = (sumRating / (course.review.length)).toFixed(1);
+
+const reviewList = course.review.sort((a,b) => {return(
+  sortBy === 'rating1' ? a[sortBy] - b[sortBy] : b[sortBy] - a[sortBy]
+)});
+
 
   return(
     <>
@@ -26,30 +38,33 @@ function ProductDetail(){
       course = {course}/>
       <section className="detail">
         <h4>상품상세 / 배송 및 반품 / 상품리뷰</h4>
-        <div><img /></div>      
+        <div><img src={course.detailImg} alt={course.name}/></div>      
       </section>
 
       <section className="review">
-        <h4>Review(리뷰개수)</h4>
-        <div>
-          <p>
-            <span>리뷰평점</span>
-            <span>상품 리뷰 작성하기</span>
-          </p>
-        </div>
-        <ul>
-          <li>최신순</li>
-          <li>별점순</li>
-        </ul>
+        <h4>Review<b>({course.review.length})</b></h4>
         <p>
-          <select>별점</select>
-          <option>5</option>
-          <option>4</option>
-          <option>3</option>
-          <option>2</option>
-          <option>1</option>
-        </p>
-        <Review />
+         <span>리뷰 평점</span>
+         <span>{averageRating}점<i>/5점</i></span>
+        </p>     
+        <div onClick={()=>setToggle(!toggle)}>
+          <p>정렬</p>
+          <ul>
+              {
+                toggle !== false ?
+                <>
+                <li onClick={()=>setSortBy('date')}>최신순</li>
+                <li onClick={()=>setSortBy('rating2')}>평점 높은순</li>
+                <li onClick={()=>setSortBy('rating1')}>평점 낮은순</li>
+                </>
+                : null
+              }
+          </ul>
+        </div>
+
+        {
+          reviewList.map(review => <Review review={review}/>)
+        }     
       </section>
     </article>
     </>
