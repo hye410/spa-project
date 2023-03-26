@@ -78,6 +78,8 @@ article>figure>figcaption>dl.option>dd{
   text-align: right;
 }
 
+
+
 section.detail{
   width: 100%;
   /* background-color: red; */
@@ -89,8 +91,25 @@ section.detail>h4{
   margin-bottom : 40px;
 }
 
+section.detail>h4>ul{
+  display: flex;
+  justify-content: center;
+}
+
+section.detail>h4>ul>li{
+  cursor: pointer
+}
+
+section.detail>h4>ul>li>a{
+  color : #000;
+}
+
 section.detail>div{
   width : 80%;
+}
+
+section#delivery>h4{
+  width : 90%;
 }
 
 section.review{
@@ -143,10 +162,12 @@ section.review>div{
 
 section.review>div>p{
   width:100px;
-  border : 1px solid #000;
+  border : 1px solid #3c3737;
   padding: 10px 5px;
   text-align: center;
   box-sizing: border-box;
+  background-color: #3c3737;
+  color:#fff;
 }
 
 section.review>div>ul{
@@ -166,5 +187,9 @@ section.review>div>ul>li{
   border-top:none;
   z-index: 500;
   background-color: #fff;
+}
+
+section.review>div>ul>li:first-child{
+  border-top:1px solid #000;
 }
 

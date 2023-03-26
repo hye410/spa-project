@@ -3,6 +3,7 @@ import Nav2 from '../components/Nav2';
 import DetailOption from '../components/DetailOption';
 import Review from '../components/Review';
 import './css/ProductDetail.css';
+import './jquery/ProductDetail-jq.js';
 import { Link, useParams } from 'react-router-dom';
 import { courseByDetail } from '../api/api';
 import { useState } from 'react';
@@ -37,12 +38,22 @@ const reviewList = course.review.sort((a,b) => {return(
       key={course.id}     
       course = {course}/>
       <section className="detail">
-        <h4>상품상세 / 배송 및 반품 / 상품리뷰</h4>
-        <div><img src={course.detailImg} alt={course.name}/></div>      
+        <h4>
+          <ul>
+            <li><a href="#proDetail">상품상세&nbsp;</a></li>/
+            <li><a href="#delivery">&nbsp;배송 및 반품&nbsp;</a></li>/
+            <li><a href="#review">&nbsp;상품리뷰</a></li>
+          </ul>
+        </h4>
+        <div id="proDetail"><img src={course.detailImg} alt={course.name}/></div>      
+      </section>
+
+      <section id="delivery">
+        <h4><img src="/images/delivery.png" alt="delivery" /></h4>
       </section>
 
       <section className="review">
-        <h4>Review<b>({course.review.length})</b></h4>
+        <h4 id="review">Review<b>({course.review.length})</b></h4>
         <p>
          <span>리뷰 평점</span>
          <span>{averageRating}점<i>/5점</i></span>

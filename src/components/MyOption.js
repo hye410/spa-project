@@ -4,45 +4,43 @@ import './css/MyOption.css';
 
 
 
-function MyOption({price,myOptionList}){
+function MyOption({price,myOptionList,list}){  
 
-
-  // let myOptionList = myOptList.filter((option,index,arr)=>{
-  //   return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
-  // });
-  const hap = myOptionList.length;
   const [sumCount,setSumCount] = useState(0);
-  // console.log(myOptionList)
+
+  const hap = myOptionList.length;
+  
+
   return(  
     <> 
-    {myOptionList.map((option,index) => {
+    {myOptionList.map((option,index) => {      
       return(
         <dl key={index}>
           <dt>{option.color}  / {option.size}</dt>
-          <dd id="count">
+          <dd>
             <span
             onClick={function(){
               if(option.num>1){
                 option.num = option.num -= 1;
-                // setNum(option.num);
                 setSumCount(sumCount - 1);
               }else{
                 option.num = 1;
-                // setNum(option.num);
                 setSumCount(sumCount);
               }
             }}>
               -</span>
               {option.num}
-            <span
-            // onClick={()=>{option.num = option.num += 1}}
+            <span          
             onClick={()=>{option.num = option.num += 1; setSumCount(sumCount + 1);}}          
             >              
               +
             </span>
           </dd>
           <dd>{(price*option.num).toLocaleString('KO-kr')+'원'}</dd>
-          <dd><MdOutlineCancel /></dd>
+          <dd>
+            <MdOutlineCancel  
+          />
+          </dd>
         </dl>
       )
     })}

@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { addToCart } from "../api/api";
+
 import MyOption from '../components/MyOption';
-// import { addToOption } from '../api/api';
 
 function DetailOption({course}){
 
@@ -11,28 +13,26 @@ function DetailOption({course}){
 
 
   const [myOptList,setMyOptList] = useState([]);
-
-
+  
   function addOption(selectedColor,selectedSize){
     const myOpt = {
-      // id : myOptList.length,
+      id : myOptList.length,
       color : selectedColor,
       size : selectedSize,
       num : 1
     };
-    setMyOptList([...myOptList,myOpt]);
+    setMyOptList([...myOptList,myOpt]);   
   };
     
   const myOptionList = myOptList.filter((option,index,arr)=>{
     return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
-  });
+   });
 
-
+   console.log(myOptionList)
   const changeProImg = (value) => {
     setOptImg(course.imgByName[value]);
     setOptSize(course.sizes[value]);
   }
-
 
   return(
     <figure className="ProDetail">
@@ -49,7 +49,8 @@ function DetailOption({course}){
           <dt>색상</dt>
           <dd>
             <select name="color"
-            onChange={(event)=>{changeProImg(event.target.value);
+            onChange={(event)=>{
+              changeProImg(event.target.value);
               setSelectedColor(event.target.value);
                               }}                        
             defaultValue="selected">                             
@@ -76,8 +77,8 @@ function DetailOption({course}){
             defaultValue="selected"
             onChange={
               (event)=>{
-                addOption(selectedColor,event.target.value);
-                }}
+                addOption(selectedColor,event.target.value) ;}  
+                }
                 >
                   {/* 여기서 selectedSize를 setting한 후에 addOption을 하게되면 동시에 event가 진행되어서 원하는대로 optList가 출력되지않음 . (한박자 뒤에 출력됨)
                   그래서 여기서는 selectedSize를 받는 대신에 바로 매개변수값에 집어넣음 */}
@@ -99,16 +100,22 @@ function DetailOption({course}){
           {/* 반복문 */}
           <MyOption
           myOptionList = {myOptionList}
-          price = {course.price1}          
+          price = {course.price1}
           />
         </div>
         
         <p>
-          <button type="button">
+          <button
+          type="button"
+          onClick={()=>{
+            alert('장바구니에 물건이 담겼습니다.');
+            addToCart(myOptionList)
+          }}
+          >
             장바구니 담기
           </button>
           <button type="button" >
-            바로 구매
+            <Link to="/login">바로 구매</Link>
           </button>
         </p>
       </figcaption>

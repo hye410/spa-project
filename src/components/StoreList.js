@@ -1,30 +1,12 @@
-import { useEffect } from "react";
-const {kakao} = window;
-
-function StoreList({selectedStore}){
-  // useEffect(()=>{
-  //   const container = document.getElementById('#map');
-  //   const options = {
-  //     center : new kakao.maps.Lating(33.450701,126.570667),
-  //     level : 3
-  //   };
-  //   const map = new kakao.maps.Map(container,options);
-  // },[])
-
-
-
-    return(
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li id="map" style={{width:'500px',height:'500px'}}>
-
-        </li>
-      </ul>
-    )
-
-    }
-
+function StoreList(){
+  return(
+    <ul>
+      <li>매장이름</li>
+      <li>매장주소</li>
+      <li>영업시간</li>
+      <li>전화번호</li>
+    </ul>
+  )
+}
 
 export default StoreList;

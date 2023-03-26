@@ -3,7 +3,6 @@
   /* background-color: yellow; */
   padding : 40px 5px 30px;
   font-size: 14px;
-  border-bottom : 1px solid #cfc9c9d5;
 }
 
 .decision>dl{
@@ -15,6 +14,7 @@
 
 .decision>dl>dt{
   font-weight: bold;
+  width:55%;
 }
 .decision>dl>dd:last-child{
   margin-bottom: 10px;
@@ -34,12 +34,13 @@
 
 ul.priceSum{
   display: flex;
-  padding: 30px 5px 0;
+  padding: 30px 5px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 40px;
   border-bottom:  1px solid #cfc9c9d5;
+  border-top:  1px solid #cfc9c9d5;
 }
 
 ul.priceSum>li:first-child{
@@ -69,5 +70,9 @@ figure.ProDetail p>button:first-child{
 
 figure.ProDetail p>button:last-child{
   background-color: #1a1a1a;
+}
+
+figure.ProDetail p>button:last-child>a{
   color:#fff;
+  display: block;
 }

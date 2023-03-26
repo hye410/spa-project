@@ -8,6 +8,8 @@ function Review({review}){
     return `${day.getFullYear()}-${day.getMonth()+1}-${day.getDate()}`
   }
 
+  
+
   return(
     <dl>
       <dl>

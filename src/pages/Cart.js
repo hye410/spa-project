@@ -1,7 +1,7 @@
 import Nav from '../components/Nav';
 import './css/Cart.css';
 import CartProduct from '../components/CartProduct';
-import { getCartList } from '../api/api';
+import { getCartList,CartList } from '../api/api';
 import { useEffect, useState } from 'react';
 
 function Cart(){
