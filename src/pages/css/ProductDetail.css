@@ -193,3 +193,14 @@ section.review>div>ul>li:first-child{
   border-top:1px solid #000;
 }
 
+article ul.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article ul.page>li{
+  padding : 5px;
+  margin : 0 5px;
+  cursor: pointer;
+}

@@ -4,10 +4,24 @@ import NewProduct from '../components/NewProduct';
 import "./css/New.css";
 import newData from '../api/new.json';
 import { useState } from 'react';
+import Pagination from '../components/Pagination';
+
 function New(){
   const [order,setOrder] = useState('date');
   const sortItems = newData.sort((a,b) => (order === 'price2') ? a[order] - b[order] : b[order]-a[order]);
   const [toggle,setToggle] = useState(false);
+
+  // 한 페이지에 들어갈 갯수, 인덱스1번 인덱스 마지막번호, 페이지번호,
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const postsPerPage = 9;
+  const indexOfLast = currentPage * postsPerPage;
+  const indexOfFirst = indexOfLast - postsPerPage;
+
+  const currentPost = newData.slice(indexOfFirst,indexOfLast);
+
+  // console.log(currentPost)
 
   return(
     <>
@@ -18,8 +32,8 @@ function New(){
       <section>
         <h4><img src="./images/new-logo.png" alt="newLogo" /></h4>
         {/* 로고 다시 만들기 */}        
-        <div>
-          <p>{newData.length} Items</p>
+        <div class="new">
+          <p>{currentPost.length} Items</p>
           <div onClick={()=>setToggle(!toggle)}>
             정렬
             {
@@ -37,13 +51,18 @@ function New(){
           </div>
           </div>
           <div className="newList">
-            {sortItems.map(newItem => {return(
+            {currentPost.map(newItem => {return(
              <NewProduct
-             key={newItem.id}
+            key={newItem.id}
              newItem = {newItem} />
           )})}
         </div>
       </section>
+        <Pagination
+        pages = {setCurrentPage}
+        postsPerPage = {postsPerPage}
+        totalPages = {newData.length}     
+         />
     </article>
     </>
   )

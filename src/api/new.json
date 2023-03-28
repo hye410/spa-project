@@ -245,5 +245,800 @@
         "text":"무난하게 입기 좋아요"
       }
     ]
+  },
+  {
+    "id" : 4,
+    "name" : "NEW 캐시미어 혼방 크루넥 스웨터",
+    "imgUrl" : "/images/new/new4-1.jpg",
+    "price1" : 49800,
+    "price2" : 49800,
+    "recommendation" : 17893,
+    "hits" : 1574,
+    "kind" : "Tops",
+    "date" : 1677478579658,
+    "popularity" : 1773,
+    "course" : "detail_new_04", 
+    "num" : 1,   
+    "detailImg" : "/images/new/new4-detail.jpg",
+    "colors" : ["01 아이보리+베이지 티핑","02 와일드 로즈","03 네이비+아이보리 티핑"],
+    "sizes" : 
+      {
+       "01 아이보리+베이지 티핑" : ["S","M"],
+       "02 와일드 로즈" : ["S","M"],
+       "03 네이비+아이보리 티핑" : ["S","M"]
+      },
+    "imgByColor" : 
+    {
+      "01 아이보리+베이지 티핑" : "/images/new/new4-1.jpg",
+      "02 와일드 로즈" : "/images/new/new4-2.jpg",
+      "03 네이비+아이보리 티핑" : "/images/new/new4-3.jpg"
+    },
+    "imgByName" : 
+    {
+      "01 아이보리+베이지 티핑" : "/images/new/new4-1.jpg",
+      "02 와일드 로즈" : "/images/new/new4-2.jpg",
+      "03 네이비+아이보리 티핑" : "/images/new/new4-3.jpg"
+    },
+    "review" : 
+    [
+      {
+        "id" : 1,
+        "date" : 1676571200000,
+        "rating1" : 3,
+        "rating2" : 3,
+        "name" : "김나리",
+        "text" : "사이즈가 작게 나왔네요"
+      },
+      {
+        "id":2,
+        "date":1657377200000,
+        "rating1":5,
+        "rating2":5,
+        "name":"장원영",
+        "text":"다들 예쁘대요!!"
+      },
+      {
+        "id":3,
+        "date":1688775800000,
+        "rating1":2,
+        "rating2":2,
+        "name":"안유진",
+        "text":"옷은 예쁜데 배송이 넘 느려여"
+      },
+      {
+        "id":4,
+        "date":1674567800000,
+        "rating1":3,
+        "rating2":3,
+        "name":"권유리",
+        "text":"무난하게 입기 좋아요"
+      }
+    ]
+  },
+  {
+    "id" : 5,
+    "name" : "NEW 오가닉코튼 브이넥 가디건",
+    "imgUrl" : "/images/new/new5-1.jpg",
+    "price1" : 69800,
+    "price2" : 69800,
+    "recommendation" : 45423,
+    "hits" : 6534,
+    "kind" : "Outers",
+    "date" : 16774745765782,
+    "popularity" : 73874,
+    "course" : "detail_new_05",
+    "num" : 1,
+    "detailImg" : "/images/new/new5-detail.jpg",
+    "colors" : ["01 카멜","02 네이비"],
+    "sizes" : 
+      {
+       "01 카멜" : ["S","M"],
+       "02 네이비" : ["S","M"]
+      },
+      "imgByColor" : 
+        {
+          "01 카멜" : "/images/new/new5-1.jpg",
+          "02 네이비" : "/images/new/new5-2.jpg"
+        },
+      "imgByName" : 
+        {
+          "01 카멜" : "/images/new/new5-1.jpg",
+          "02 네이비" : "/images/new/new5-2.jpg"
+        },
+        "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1677851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "안소희",
+            "text" : "강추강추"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"김현아",
+            "text":"예뻐요"
+          },
+          {
+            "id":3,
+            "date":1645745800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"박예은",
+            "text":"너무 예쁩니다."
+          },
+          {
+            "id":4,
+            "date":1678645800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"배주현",
+            "text":"사이즈도 딱이고 예뻐요"
+          },
+          {
+            "id":5,
+            "date":1648881500000,
+            "rating1":3,
+            "rating2":3,
+            "name":"신예은",
+            "text":"핏이 어정쩡해요"
+          },
+          {
+            "id":6,
+            "date":1676936500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"이정현",
+            "text":"예뻐요!!"
+          }
+        ]
+  },
+  {
+    "id" : 6,
+    "name" : "NEW 한소희 프린트 티셔츠",
+    "imgUrl" : "/images/new/new6-1.jpg",
+    "price1" : 17800,
+    "price2" : 17800,
+    "recommendation" : 57423,
+    "hits" : 6534,
+    "kind" : "Tops",
+    "date" : 1677488867522,
+    "popularity" : 98354,
+    "course" : "detail_new_06",
+    "num" : 1,
+    "detailImg" : "/images/new/new6-detail.jpg",
+    "colors" : ["01 화이트","02 블루","03 레몬", "04 핑크"],
+    "sizes" : 
+      {
+       "01 화이트" : ["S","M"],
+        "02 블루" : ["S","M"],
+        "03 레몬" : ["S","M"],
+        "04 핑크" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 화이트" : "/images/new/new6-1.jpg",
+        "02 블루" : "/images/new/new6-2.jpg",
+        "03 레몬" : "/images/new/new6-3.jpg",
+        "04 핑크" : "/images/new/new6-4.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 화이트" : "/images/new/new6-1.jpg",
+        "02 블루" : "/images/new/new6-2.jpg",
+        "03 레몬" : "/images/new/new6-3.jpg",
+        "04 핑크" : "/images/new/new6-4.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 7,
+    "name" : "NEW 한소희 크롭 데님 자켓",
+    "imgUrl" : "/images/new/new7-1.jpg",
+    "price1" : 71820,
+    "price2" : 71820,
+    "recommendation" : 85423,
+    "hits" : 9994,
+    "kind" : "Outers",
+    "date" : 16774745987652,
+    "popularity" : 173874,
+    "course" : "detail_new_07",
+    "num" : 1,
+    "detailImg" : "/images/new/new7-detail.jpg",
+    "colors" : ["01 워시드블루","02 에크루","03 핑크"],
+    "sizes" : 
+      {
+       "01 워시드블루" : ["S","M"],
+       "02 에크루" : ["S","M"],
+       "03 핑크" : ["S","M"]
+      },
+      "imgByColor" : 
+        {
+          "01 워시드블루" : "/images/new/new7-1.jpg",
+          "02 에크루" : "/images/new/new7-2.jpg",
+          "03 핑크" : "/images/new/new7-3.jpg"
+        },
+      "imgByName" : 
+        {
+          "01 워시드블루" : "/images/new/new7-1.jpg",
+          "02 에크루" : "/images/new/new7-2.jpg",
+          "03 핑크" : "/images/new/new7-3.jpg"
+        },
+        "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1677851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "안소희",
+            "text" : "강추강추"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"김현아",
+            "text":"예뻐요"
+          },
+          {
+            "id":3,
+            "date":1645745800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"박예은",
+            "text":"너무 예쁩니다."
+          },
+          {
+            "id":4,
+            "date":1678645800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"배주현",
+            "text":"사이즈도 딱이고 예뻐요"
+          },
+          {
+            "id":5,
+            "date":1648881500000,
+            "rating1":3,
+            "rating2":3,
+            "name":"신예은",
+            "text":"핏이 어정쩡해요"
+          },
+          {
+            "id":6,
+            "date":1676936500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"이정현",
+            "text":"예뻐요!!"
+          }
+        ]
+  },
+  {
+    "id" : 8,
+    "name" : "NEW 한소희 프린트 티셔츠",
+    "imgUrl" : "/images/new/new8-1.jpg",
+    "price1" : 44800,
+    "price2" : 44800,
+    "recommendation" : 87423,
+    "hits" : 9534,
+    "kind" : "Tops",
+    "date" : 1677489785522,
+    "popularity" : 88354,
+    "course" : "detail_new_08",
+    "num" : 1,
+    "detailImg" : "/images/new/new8-detail.jpg",
+    "colors" : ["01 화이트","02 핑크","03 샐러리그린", "04 블루 스트라이프", "05 블루"],
+    "sizes" : 
+      {
+       "01 화이트" : ["S","M"],
+        "02 핑크" : ["S","M"],
+        "03 샐러리그린" : ["S","M"],
+        "04 블루 스트라이프" : ["S","M"],
+        "05 블루" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 화이트" : "/images/new/new8-1.jpg",
+        "02 핑크" : "/images/new/new8-2.jpg",
+        "03 샐러리그린" : "/images/new/new8-3.jpg",
+        "04 블루 스트라이프" : "/images/new/new8-4.jpg",
+        "05 블루" : "/images/new/new8-5.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 화이트" : "/images/new/new8-1.jpg",
+        "02 핑크" : "/images/new/new8-2.jpg",
+        "03 샐러리그린" : "/images/new/new8-3.jpg",
+        "04 블루 스트라이프" : "/images/new/new8-4.jpg",
+        "05 블루" : "/images/new/new8-5.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 9,
+    "name" : "NEW 한소희 케이블 크루넥 가디건",
+    "imgUrl" : "/images/new/new9-1.jpg",
+    "price1" : 69800,
+    "price2" : 69800,
+    "recommendation" : 51423,
+    "hits" : 7034,
+    "kind" : "Outer",
+    "date" : 1677488843211,
+    "popularity" : 88354,
+    "course" : "detail_new_09",
+    "num" : 1,
+    "detailImg" : "/images/new/new9-detail.jpg",
+    "colors" : ["01 파파야","02 베이비 핑크","03 애플민트"],
+    "sizes" : 
+      {
+       "01 파파야" : ["S","M","L"],
+        "02 베이비 핑크" : ["S","M","L"],
+        "03 애플민트" : ["S","M","L"]
+      },
+    "imgByColor" : 
+      {
+       "01 파파야" : "/images/new/new9-1.jpg",
+        "02 베이비 핑크" : "/images/new/new9-2.jpg",
+        "03 애플민트" : "/images/new/new9-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 파파야" : "/images/new/new9-1.jpg",
+        "02 베이비 핑크" : "/images/new/new9-2.jpg",
+        "03 애플민트" : "/images/new/new9-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 10,
+    "name" : "NEW 한소희 스트레이트 데님",
+    "imgUrl" : "/images/new/new10-1.jpg",
+    "price1" : 59800,
+    "price2" : 59800,
+    "recommendation" : 33423,
+    "hits" : 5734,
+    "kind" : "Pants",
+    "date" : 1677488743211,
+    "popularity" : 65354,
+    "course" : "detail_new_10",
+    "num" : 1,
+    "detailImg" : "/images/new/new10-detail.jpg",
+    "colors" : ["01 워시드블루","02 워시드 미디움블루","03 블랙"],
+    "sizes" : 
+      {
+       "01 워시드블루" : ["25","26","27","28","29"],
+        "02 워시드 미디움블루" : ["25","26","27","28","29"],
+        "03 블랙" : ["25","26","27","28","29"]
+      },
+    "imgByColor" : 
+      {
+       "01 워시드블루" : "/images/new/new10-1.jpg",
+        "02 워시드 미디움블루" : "/images/new/new10-2.jpg",
+        "03 블랙" : "/images/new/new10-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 워시드블루" : "/images/new/new10-1.jpg",
+        "02 워시드 미디움블루" : "/images/new/new10-2.jpg",
+        "03 블랙" : "/images/new/new10-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 11,
+    "name" : "NEW 한소희 와이드 데님 (롱기장+5CM)",
+    "imgUrl" : "/images/new/new11-1.jpg",
+    "price1" : 59800,
+    "price2" : 59800,
+    "recommendation" : 15423,
+    "hits" : 3194,
+    "kind" : "Pants",
+    "date" : 16774741234652,
+    "popularity" : 5774,
+    "course" : "detail_new_11",
+    "num" : 1,
+    "detailImg" : "/images/new/new1-detail.jpg",
+    "colors" : ["01 화이트","02 워시드블루","03 워시드미디움블루"],
+    "sizes" : 
+      {
+       "01 화이트" : ["25","26","27","28","29"],
+       "02 워시드블루" : ["25","26","27","28","29"],
+       "03 워시드미디움블루" : ["25","26","27","28","29"]
+      },
+      "imgByColor" : 
+        {
+          "01 화이트" : "/images/new/new11-1.jpg",
+          "02 워시드블루" : "/images/new/new11-2.jpg",
+          "03 워시드미디움블루" : "/images/new/new11-3.jpg"
+        },
+      "imgByName" : 
+        {
+          "01 화이트" : "/images/new/new11-1.jpg",
+          "02 워시드블루" : "/images/new/new11-2.jpg",
+          "03 워시드미디움블루" : "/images/new/new11-3.jpg"
+        },
+        "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1677851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "안소희",
+            "text" : "강추강추"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"김현아",
+            "text":"예뻐요"
+          },
+          {
+            "id":3,
+            "date":1645745800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"박예은",
+            "text":"너무 예쁩니다."
+          },
+          {
+            "id":4,
+            "date":1678645800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"배주현",
+            "text":"사이즈도 딱이고 예뻐요"
+          },
+          {
+            "id":5,
+            "date":1648881500000,
+            "rating1":3,
+            "rating2":3,
+            "name":"신예은",
+            "text":"핏이 어정쩡해요"
+          },
+          {
+            "id":6,
+            "date":1676936500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"이정현",
+            "text":"예뻐요!!"
+          }
+        ]
+  },
+  {
+    "id" : 12,
+    "name" : "NEW 한소희 슬림 스트레이트 데님",
+    "imgUrl" : "/images/new/new12-1.jpg",
+    "price1" : 59800,
+    "price2" : 59800,
+    "recommendation" : 27423,
+    "hits" : 7534,
+    "kind" : "Pants",
+    "date" : 1677475986522,
+    "popularity" : 9354,
+    "course" : "detail_new_12",
+    "num" : 1,
+    "detailImg" : "/images/new/new12-detail.jpg",
+    "colors" : ["01 린스","02 화이트","03 워시드블루"],
+    "sizes" : 
+      {
+       "01 린스" : ["25","26","27","28","29"],
+        "02 화이트" :  ["25","26","27","28","29"],
+        "03 워시드블루" : ["25","26","27","28","29"]
+      },
+    "imgByColor" : 
+      {
+       "01 린스" : "/images/new/new12-2.jpg",
+        "02 화이트" : "/images/new/new12-2.jpg",
+        "03 워시드블루" : "/images/new/new12-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 린스" : "/images/new/new12-2.jpg",
+        "02 화이트" : "/images/new/new12-2.jpg",
+        "03 워시드블루" : "/images/new/new12-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
   }
 ]

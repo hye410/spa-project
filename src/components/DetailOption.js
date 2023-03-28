@@ -9,9 +9,6 @@ function DetailOption({course}){
   const [optImg,setOptImg] = useState(course.imgUrl);
   const [optSize,setOptSize] = useState([]);
   const [selectedColor,setSelectedColor] = useState('');
-  // const [selectedSize,setSelectedSize] = useState('');
-
-
   const [myOptList,setMyOptList] = useState([]);
   
   function addOption(selectedColor,selectedSize){
@@ -28,7 +25,8 @@ function DetailOption({course}){
     return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
    });
 
-   console.log(myOptionList)
+  
+  //  console.log(myOptionList)
   const changeProImg = (value) => {
     setOptImg(course.imgByName[value]);
     setOptSize(course.sizes[value]);
@@ -53,13 +51,12 @@ function DetailOption({course}){
               changeProImg(event.target.value);
               setSelectedColor(event.target.value);
                               }}                        
-            defaultValue="selected">                             
-              {course.colors.map((color,index)=>{
+            >                             
+              {course.colors.map(color=>{
                 return(
                   <>
-                  {/* <option key="color" value="selected" disabled hidden>색상</option>                              */}
                   <option
-                  key={index}
+                  key={color}
                   value={color}
                   >
                     {color}
@@ -82,12 +79,11 @@ function DetailOption({course}){
                 >
                   {/* 여기서 selectedSize를 setting한 후에 addOption을 하게되면 동시에 event가 진행되어서 원하는대로 optList가 출력되지않음 . (한박자 뒤에 출력됨)
                   그래서 여기서는 selectedSize를 받는 대신에 바로 매개변수값에 집어넣음 */}
-              {/* <option key="size" value="selected" disabled hidden>사이즈</option> */}
               {
-              optSize.map((size,index) => 
+              optSize.map(size=> 
               <option
               value={size}
-              key={index}       
+              key={size}       
               >          
                 {size}
               </option>

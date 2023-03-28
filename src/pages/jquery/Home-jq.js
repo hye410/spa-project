@@ -13,11 +13,16 @@ function btn(){
   const btnTop = liHeight + ($('p.prev').height()/2);
   $('p.prev>svg').css('top',btnTop);
   $('p.next>svg').css('top',btnTop);
-  $('#box01>ul>li').on('mouseleave',function(e){
+  $('#box01>ul').on('mouseleave',function(e){
     $('p.prev>svg').css('display','none');
     $('p.next>svg').css('display','none');
   });
-  $('#box01>ul>li').on('mouseenter',function(e){
+  $('#box01>ul').on('mouseenter',function(e){
+    $('p.prev>svg').css('display','block');
+    $('p.next>svg').css('display','block');
+  });
+
+  $('#box01 p').on('mouseenter',function(e){
     $('p.prev>svg').css('display','block');
     $('p.next>svg').css('display','block');
   })

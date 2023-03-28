@@ -4,18 +4,19 @@ import './css/MyOption.css';
 
 
 
-function MyOption({price,myOptionList,list}){  
+function MyOption({price,myOptionList}){  
 
   const [sumCount,setSumCount] = useState(0);
 
   const hap = myOptionList.length;
+  const [deletedItem,setDeletedItem] = useState();
+  const [list,setList] = useState(myOptionList)
   
-
   return(  
     <> 
     {myOptionList.map((option,index) => {      
       return(
-        <dl key={index}>
+        <dl key={index}> 
           <dt>{option.color}  / {option.size}</dt>
           <dd>
             <span
@@ -38,8 +39,9 @@ function MyOption({price,myOptionList,list}){
           </dd>
           <dd>{(price*option.num).toLocaleString('KO-kr')+'원'}</dd>
           <dd>
-            <MdOutlineCancel  
-          />
+            <MdOutlineCancel
+            onClick={()=>myOptionList.splice(deletedItem,0)}
+          />{console.log(list)}
           </dd>
         </dl>
       )

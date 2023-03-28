@@ -33,4 +33,5 @@
 .newList>figure>figcaption>dl dd{
   color : rgb(216, 67, 41);
   font-weight: bold;
+  margin-bottom : 30px;
 }
