@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { ueCallback, useEffect, useRef, suseState, useState } from "react";
+import { Link, useMatch } from "react-router-dom";
 import { addToCart } from "../api/api";
 
 import MyOption from '../components/MyOption';
@@ -10,23 +10,22 @@ function DetailOption({course}){
   const [optSize,setOptSize] = useState([]);
   const [selectedColor,setSelectedColor] = useState('');
   const [myOptList,setMyOptList] = useState([]);
-  
+  const [count,setCount] = useState(0);
   function addOption(selectedColor,selectedSize){
     const myOpt = {
       id : myOptList.length,
       color : selectedColor,
       size : selectedSize,
-      num : 1
+      num : 1,
+      price : course.price1
     };
-    setMyOptList([...myOptList,myOpt]);   
+    setMyOptList([...myOptList,myOpt]);
   };
-    
-  const myOptionList = myOptList.filter((option,index,arr)=>{
-    return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index;
-   });
+  // const myOptionList = myOptList.filter((option,index,arr)=>{
+  //   return arr.findIndex(item=> (option.color === item.color) && (option.size === item.size)) === index
+  //  });
 
-  
-  //  console.log(myOptionList)
+   
   const changeProImg = (value) => {
     setOptImg(course.imgByName[value]);
     setOptSize(course.sizes[value]);
@@ -74,7 +73,9 @@ function DetailOption({course}){
             defaultValue="selected"
             onChange={
               (event)=>{
-                addOption(selectedColor,event.target.value) ;}  
+                addOption(selectedColor,event.target.value);
+                setCount(count + 1)               
+                  }  
                 }
                 >
                   {/* 여기서 selectedSize를 setting한 후에 addOption을 하게되면 동시에 event가 진행되어서 원하는대로 optList가 출력되지않음 . (한박자 뒤에 출력됨)
@@ -95,8 +96,10 @@ function DetailOption({course}){
         <div className="decision">
           {/* 반복문 */}
           <MyOption
-          myOptionList = {myOptionList}
+          myOptList={myOptList}
           price = {course.price1}
+          count = {count}
+          setCount = {setCount}
           />
         </div>
         
@@ -105,7 +108,7 @@ function DetailOption({course}){
           type="button"
           onClick={()=>{
             alert('장바구니에 물건이 담겼습니다.');
-            addToCart(myOptionList)
+            
           }}
           >
             장바구니 담기

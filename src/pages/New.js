@@ -32,7 +32,7 @@ function New(){
       <section>
         <h4><img src="./images/new-logo.png" alt="newLogo" /></h4>
         {/* 로고 다시 만들기 */}        
-        <div class="new">
+        <div className="new">
           <p>{currentPost.length} Items</p>
           <div onClick={()=>setToggle(!toggle)}>
             정렬
