@@ -18,7 +18,7 @@ nav{
 
 .gnb a{
   text-decoration: none;
-  color:#9c9b9b;
+  color:#fff;
 }
 
 .gnb li:last-child{
@@ -46,7 +46,7 @@ nav{
 
 .menu a{
   text-decoration: none;
-  color : #a5a5a5;
+  color : #fff;
 }
 
 .menu a:hover{

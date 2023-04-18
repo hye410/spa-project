@@ -2,9 +2,10 @@ import $ from 'jquery';
 
 $(function(){
   timer();
-  setInterval(timer,8000);
-  swiper();
   btn();  
+  setInterval(timer,3000);
+  swiper();
+  
 })
 
 function btn(){

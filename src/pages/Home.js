@@ -14,10 +14,10 @@ function Home(){
       <Nav2 />
     <div id="box01">
       <ul className="swiper">
-        <li><Link to="/new"><img src="./images/spring.jpg" alt="newProducts" /></Link></li>
-        <li><Link to="/best"><img src="./images/best.jpg" alt="bestProducts" /></Link></li>
-        <li><Link to="/event01"><img src="./images/event1.jpg" alt="단체티이벤트" /></Link></li>
-        <li><Link to="/event02"><img src="./images/event2.jpg" alt="모델명맞히기" /></Link></li>
+        <li><img src="./images/home-main.jpg" alt="mainImage1" /></li>
+        <li><img src="./images/home-main2.jpg" alt="mainImage2" /></li>
+        <li><img src="./images/home-main3.jpg" alt="mainImage3" /></li>
+        <li><img src="./images/home-main4.jpg" alt="mainImage4" /></li>
       </ul>
       <p className="prev"><TfiAngleLeft /></p>
       <p className="next"><TfiAngleRight /></p>
