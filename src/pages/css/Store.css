@@ -1,18 +1,18 @@
 article#store{
   width : 1400px;
   margin: 0 auto;
-  /* background-color: tan; */
+  padding: 50px 0;
+  box-sizing: border-box;
 }
 
 #store>h3{
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 50px;
 }
 
 #store>div.search{
   width : 750px;
-  /* background-color: aliceblue; */
   margin:0 auto 50px;
   padding: 40px 50px;
   display: flex;

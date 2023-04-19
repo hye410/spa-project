@@ -1,7 +1,6 @@
-article{
+/* article{
   width : 1400px;
   margin: 0 auto;
-  /* background-color: green; */
   padding: 25px 0;
   box-sizing: border-box;
 }
@@ -22,7 +21,6 @@ section>div{
   align-items: center;
   justify-content: space-between;
   width : 1200px;
-  /* background-color: pink; */
   margin:0 auto 30px;
   font-size: 14px;
 }
@@ -46,4 +44,4 @@ section>div>ul>li{
   width:calc(33.3333% - 0.5em);
   margin: 0 0.5em;
 }
-
+ */

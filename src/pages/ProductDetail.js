@@ -29,7 +29,7 @@ const reviewList = course.review.sort((a,b) => {return(
     <>
     <Nav />
     <Nav2 />
-    <article>
+    <article id="DetailPRO">
       <h3>
         <Link to="/">Home</Link>/
         {course.kind}/{course.name}

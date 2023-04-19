@@ -27,7 +27,7 @@ function New(){
     <>
     <Nav />
     <Nav2 />
-    <article>
+    <article id="new">
         <h3>Home/New ARRIVALS</h3>
       <section>
         <h4><img src="./images/new-logo.png" alt="newLogo" /></h4>

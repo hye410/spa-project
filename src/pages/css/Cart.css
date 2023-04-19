@@ -1,25 +1,27 @@
 article#cart{
   width : 1400px;
   margin : 0 auto;
+  padding: 25px 0;
+  box-sizing: border-box;
   /* background-color: pink; */
 }
 
 #cart>h3{
   text-align: center;
+  margin-bottom:80px;
 }
 
 #cart>section{
-  /* background-color: antiquewhite; */
   width : 85%;
   margin: 0 auto;
 }
 
 #cart>section>h4{
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   color : #333333;
-  margin-bottom : 25px;
+  margin-bottom : 50px;
 }
 
 #cart>section>.cartList{
