@@ -69,7 +69,7 @@ function DetailOption({course}){
         </dl>
               
         <div className="decision">
-          <MyOption myOption={myOption} price={course.price1}/>
+          <MyOption myOption={myOption} price={course.price1} setSelectedOption={setSelectedOption} selectedOption={selectedOption}/>
        </div>
         
         <p>

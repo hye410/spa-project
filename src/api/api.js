@@ -17,22 +17,4 @@ export function getCartList(){
 }
 
 
-// 
-//  selectedOption은 빈배열의 state,,
-
-// export function addToOption(selectedOption,setSelectedOption,color,size){
-//   let options = {
-//     id : addToOption().length -1 ,
-//     color : color,
-//     size : size
-//   };
-
-//   const DuplicateContent = selectedOption.find(content => content.name !== options.name && content.size !== options.size);
-
-
-//   if(DuplicateContent == true){
-//     return setSelectedOption(selectedOption);
-//   }else{
-//     return setSelectedOption([...selectedOption,options]);
-//   }
-// }
+// 카트 담기

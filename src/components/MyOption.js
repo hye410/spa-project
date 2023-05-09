@@ -2,11 +2,15 @@ import { MdOutlineCancel } from "react-icons/md";
 import './css/MyOption.css';
 import { useState } from "react";
 
-function MyOption({myOption,price}){ 
+function MyOption({myOption,price,selectedOption,setSelectedOption}){ 
   
   const[render,setRender] = useState(0);
 
   const count = myOption.reduce((sum,{num}) => sum = sum + num ,0);
+
+  const deleteItem = (id) => {
+    return setSelectedOption(selectedOption.filter(opt => opt.id !== id));
+  }
 
   return(
     <>
@@ -29,6 +33,7 @@ function MyOption({myOption,price}){
       </dd>
       <dd>
       <MdOutlineCancel
+      onClick={()=>{deleteItem(option.id)}}
       />
       </dd>
       </dl>

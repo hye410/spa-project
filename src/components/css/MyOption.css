@@ -32,6 +32,10 @@
   display: inline-block;
 }
 
+.decision>dl>dd>svg{
+  cursor: pointer;
+}
+
 ul.priceSum{
   display: flex;
   padding: 30px 5px;
