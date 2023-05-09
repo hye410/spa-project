@@ -16,7 +16,7 @@ import Pants from './pages/Pants';
 import HomeWear from './pages/HomeWear';
 import ProductDetail from './pages/ProductDetail';
 import NotFound from './pages/NotFound';
-import Toy from './components/Toy';
+
 function Main(){
   return(
     <BrowserRouter>
@@ -61,7 +61,6 @@ function Main(){
             <Route path=":courseDetail" element={<ProductDetail />}/>
           </Route>;
           <Route path="*" element={<NotFound />}/>
-          <Route path="/toy" element={<Toy />}/>
         </Routes>
       </App>
     </BrowserRouter>
