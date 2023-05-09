@@ -1,0 +1,82 @@
+.hide{
+  width : 0; height:0;
+  font-size: 0; line-height: 0;
+  position : absolute; visibility: hidden;
+}
+#login{
+  padding-top : 13%;
+  height:calc(100vh - 40px);
+  box-sizing: border-box;
+  /* background-color: yellow; */
+}
+#login>h3{
+  font-weight: bold;
+  font-size: 30px;
+  color : #333;
+  margin-bottom : 100px;
+  text-align: center;
+}
+
+#login>form{
+  width : 35%;
+  margin : 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap : wrap;
+  align-items: center;
+}
+
+#login>form>input{
+  width: 100%;
+  margin-bottom: 25px;
+  padding : 15px 0 ;
+  border:none;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  text-indent: 15px;
+}
+
+#login>.find{
+  width : 35%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom : 100px;
+}
+
+#login>.find>p{
+  display: flex;
+  align-items: center;
+}
+
+#login>.find>p>input{
+  margin : 0 5px;
+}
+
+#login>.find>ul{
+  display: flex;
+  width : 100%;
+  justify-content: flex-end;
+}
+
+#login>.find>ul>li{
+  cursor: pointer;
+}
+
+#login>p{
+  width : 35%;
+  margin : 0 auto;
+  text-align: center;
+}
+
+#login>p>button{
+  padding : 30px 20px;
+  border : none;
+  width : 100%;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}

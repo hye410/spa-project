@@ -1,0 +1,70 @@
+article#store{
+  width : 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+#store>h3{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#store>div.search{
+  width : 750px;
+  margin:0 auto 50px;
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border : 1px solid #c8c7c7;
+}
+
+#store>div.search>select:first-child{
+  width:75px;
+  padding:2px 5px;
+  margin-right: 16px;
+  box-sizing: border-box;
+  border-color: #c8c7c7;
+}
+
+#store>div.search>select:nth-child(2){
+  width:75px;
+  padding:2px 5px;
+  margin-right: 60px;
+   box-sizing: border-box;
+   border-color: #c8c7c7;
+}
+
+#store>div.search>p{
+  width:380px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;  
+}
+
+#store>div.search>p>input{
+  width:90%;
+  border:none;
+  padding: 5px 0;
+  text-indent: 5px;
+}
+
+#store>div.search>p>svg{
+  width:10%;
+}
+
+article#store>.stores{
+  /* background-color: rgb(97, 130, 158); */
+}
+
+article#store>.stores>h4{
+  font-size: 18px;
+  padding-bottom: 25px;
+  text-indent: 10px;
+  border-bottom: 1px solid #c8c7c7;
+}

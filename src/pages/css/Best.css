@@ -1,0 +1,47 @@
+/* article{
+  width : 1400px;
+  margin: 0 auto;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+
+
+article>h3{
+  text-align: center;
+  margin-bottom:50px;
+}
+
+section>h4{
+  width:1100px;
+  margin:0 auto 30px;
+}
+
+section>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width : 1200px;
+  margin:0 auto 30px;
+  font-size: 14px;
+}
+
+section>div>ul{
+  display: flex;
+}
+
+section>div>ul>li{
+  margin: 0 10px;
+}
+
+.bestList{
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.bestList>figure{
+  width:calc(33.3333% - 0.5em);
+  margin: 0 0.5em;
+}
+ */
