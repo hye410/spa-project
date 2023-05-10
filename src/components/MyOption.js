@@ -12,6 +12,7 @@ function MyOption({myOption,price,selectedOption,setSelectedOption}){
     return setSelectedOption(selectedOption.filter(opt => opt.id !== id));
   }
 
+
   return(
     <>
     {myOption.map(option => 
@@ -21,7 +22,7 @@ function MyOption({myOption,price,selectedOption,setSelectedOption}){
       <span 
       onClick={()=>{    
         option.num <= 1 ? option.num = 1 : option.num = option.num -1 ;
-        setRender(render - 1);
+        setRender(render - 1); 
       }}>
         -
       </span>

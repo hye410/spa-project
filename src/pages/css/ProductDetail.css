@@ -162,6 +162,7 @@ section.review>div{
   justify-content: flex-end;
   position: relative;
   display:flex;
+  margin-bottom : 20px;
 }
 
 section.review>div>p{

@@ -13,18 +13,11 @@ function Nav(){
         <li>
           <Link to="/cart">
             <BsBag />
-          <span></span>
+          <span>
+          </span>
           </Link>
         </li>
       </ul>
-      {/* <ul className="menu">
-        <li><Link to="/new">NEW ARRIVALS</Link></li>
-        <li><Link to="/best">BEST</Link></li>
-        <li><Link to="/outer">Outer</Link></li>
-        <li><Link to="/tops">Tops</Link></li>
-        <li><Link to="/pants">Pants</Link></li>
-        <li><Link to="/homewear">Home Wear</Link></li>
-      </ul> */}
     </nav>
   )
 }

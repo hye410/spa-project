@@ -1,8 +1,7 @@
 import { useState , useEffect } from "react";
 import { Link } from "react-router-dom";
 import MyOption from './MyOption';
-// import { addToOption } from '../api/api';
-
+import { addToCart2 } from '../api/api';
 function DetailOption({course}){
 
   const [selectedColor,setSelectedColor] = useState(course.colors[0]);
@@ -10,25 +9,28 @@ function DetailOption({course}){
   const [myOption,setMyOption] = useState([]);
 
 
-
-  function addToOption(color,size){
+  function addToOption(color,size,name){
     let options = {
       id : selectedOption.length,
+      name : name,
       color : color,
       size : size,
       num : 1,
-      price : course.price1
+      price : course.price1,
+      img : course.imgByColor[color]
     };
     
     return setSelectedOption([...selectedOption,options]);
   }
-
 
    useEffect(()=>{
     let filterOption = selectedOption.filter((opt,index) => selectedOption.findIndex(item => item.color === opt.color && item.size === opt.size) === index);
     return setMyOption(filterOption);
   },[selectedOption]);
 
+  const notice = () => {
+    myOption.length === 0 ? alert('장바구니에 담을 물건이 없습니다.') : alert('장바구니에 담겼습니다.');
+  }
 
      return(
     <figure className="ProDetail">
@@ -56,7 +58,7 @@ function DetailOption({course}){
           </dd>
           <dt>사이즈</dt>
           <dd>
-            <select onChange={(e) => {addToOption(selectedColor,e.target.value)}}>
+            <select onChange={(e) => {addToOption(selectedColor,e.target.value,course.name);}}>
               {
                 course.sizes[selectedColor].map((size,index) => 
                 <option key={index}>
@@ -69,15 +71,21 @@ function DetailOption({course}){
         </dl>
               
         <div className="decision">
-          <MyOption myOption={myOption} price={course.price1} setSelectedOption={setSelectedOption} selectedOption={selectedOption}/>
+          <MyOption 
+          myOption={myOption} 
+          price={course.price1} 
+          setSelectedOption={setSelectedOption} 
+          selectedOption={selectedOption}
+          />
        </div>
         
         <p>
           <button
           type="button"
           onClick={()=>{
-            alert('장바구니에 물건이 담겼습니다.');
-            
+            addToCart2(myOption);
+            setSelectedOption([]);
+            notice();
           }}
           >
             장바구니 담기

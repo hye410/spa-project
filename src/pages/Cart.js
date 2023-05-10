@@ -1,22 +1,15 @@
 import Nav from '../components/Nav';
 import './css/Cart.css';
 import CartProduct from '../components/CartProduct';
-import { getCartList,CartList } from '../api/api';
-import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Cart(){
-
-  const [addedList,setAddedList] = useState([]);
-
-  useEffect(()=>{
-    const NextList = getCartList();
-    setAddedList(NextList);
-  },[]);
+  
   return(
     <>
     <Nav />
     <article id="cart">
-      <h3>Home/장바구니</h3>
+      <h3><Link to="/">Home</Link>/장바구니</h3>
       <section>
         <h4>장바구니</h4>
         <div className="cartList">
@@ -30,10 +23,8 @@ function Cart(){
             <li>총금액</li>
             <li>삭제</li>
           </ul>
+          <CartProduct />
         </div>
-        {
-        addedList.map((item,index) => <CartProduct key={index} addedItem={item} />)
-        }
         <p>
           <button type="button">선택삭제</button>
           <button type="button">전체삭제</button>

@@ -32,7 +32,8 @@ const reviewList = course.review.sort((a,b) => {return(
     <article id="DetailPRO">
       <h3>
         <Link to="/">Home</Link>/
-        {course.kind}/{course.name}
+        <Link to ={`/${course.kind}`}>{course.kind}</Link>/
+        {course.name}
       </h3>
       <DetailOption
       key={course.id}     
