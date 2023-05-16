@@ -4,10 +4,10 @@ import CartProduct from '../components/CartProduct';
 import { Link } from 'react-router-dom';
 
 function Cart(){
-  
+  const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
   return(
     <>
-    <Nav />
+    <Nav sum = {ItemsInTheCart.length}/>
     <article id="cart">
       <h3><Link to="/">Home</Link>/장바구니</h3>
       <section>
@@ -16,14 +16,12 @@ function Cart(){
           <ul>         
             <li><input type="checkbox" /></li>
             <li>상품명</li>
-          </ul>
-          <ul>
             <li>가격</li>
             <li>수량</li>
             <li>총금액</li>
             <li>삭제</li>
           </ul>
-          <CartProduct />
+          <CartProduct ItemsInTheCart={ItemsInTheCart}/>
         </div>
         <p>
           <button type="button">선택삭제</button>

@@ -1,62 +1,49 @@
 
-.addedItem{
-  margin : 0 auto;
+.addedItems>li:nth-child(2){
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* background-color: pink; */
-  border-bottom : 1px solid #a59e9e;
-  padding : 25px 10px;
-  color:#a59e9e;
+  justify-content: center;
 }
 
-.addedItem img{
-  width :110px;
-  /* margin-right: 15px; */
+.addedItems>li>p:first-child{
+  width : 20%;
 }
 
-.addedItem ul{
+.addedItems>li>p:last-child{
+  width : 80%;
+}
+
+.addedItems>li>p>img{
+  width : 80px;
+}
+
+.addedItems>li>p:last-child>span{
+  display: block;
+  padding : 5px 0;
+}
+
+.addedItems>li>p:last-child>span:last-child{
+  font-size : 12px;
+}
+
+/* .addedItems>li:nth-child(4){
   display: flex;
   align-items: center;
-  padding : 0 5px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-
-.addedItem ul.added1{
-  width : 60%;
-}
-
-.addedItem ul.added1>li:nth-child(1){
-  margin:0 5px;
-}
-
-.addedItem .added1>li:nth-child(3)>p:first-child{
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom : 5px;
-}
-
-.addedItem ul.added2{
-  width : 40%;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-
-
-.addedItem ul>li>input{
-  cursor: pointer;
-}
-
-.addedItem ul>li svg{
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.addedItem ul>li button{
-  cursor: pointer;
+  justify-content: center;
+} */
+.addedItems>li>span{
+  width : 13px;
+  height : 13px;
+  display: block;
+  /* background-color: cadetblue; */
+  border : 1px solid #000;
   margin : 0 5px;
-  background-color: #fff;
-  border : 1px solid #a59e9e;
-  font-size: 17px;
 }
+
+.addedItems button{
+  width : 18px;
+  height : 18px;
+  margin : 0 5px;
+}
+
+

@@ -24,29 +24,31 @@ article#cart{
   margin-bottom : 50px;
 }
 
-#cart>section>.cartList{
-  border-top : 1px solid #333;
-  padding : 5px 10px;
-  border-bottom : 1px solid #a59e9e;
+
+#cart>section>.cartList>ul{
+  /* background-color: gainsboro; */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  color : #a59e9e;
-  margin-bottom : 0;
+  padding : 20px 15px;
+  border : 1px solid #000;
+  margin-bottom : 5px;
 }
 
-
-#cart>section>.cartList>ul:first-child{
-  width : 60%;
+#cart>section>.cartList>ul>li{
+  width : 13.3333%;
+  text-align: center;
 }
 
-#cart>section>.cartList>ul:first-child>li:nth-child(2){
-  margin : 0 280px;
+#cart>section>.cartList>ul>li:first-child{
+  width : 5%;
 }
 
-#cart>section>.cartList>ul:last-child{
-  width : 40%;
-  justify-content: space-between;
+#cart>section>.cartList>ul>li:nth-child(2){
+  width : 50%;
+}
+
+#cart>section>.cartList>ul>li:last-child{
+  width : 5%;
 }
 
 #cart>section>p{

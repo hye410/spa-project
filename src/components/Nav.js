@@ -3,7 +3,7 @@ import { BsBag } from "react-icons/bs";
 import './css/Nav.css';
 import { useState } from "react";
 
-function Nav(){
+function Nav({sum}){
 
   return(
     <nav>
@@ -14,6 +14,7 @@ function Nav(){
           <Link to="/cart">
             <BsBag />
           <span>
+            {sum}
           </span>
           </Link>
         </li>
