@@ -37,7 +37,8 @@ const reviewList = course.review.sort((a,b) => {return(
       </h3>
       <DetailOption
       key={course.id}     
-      course = {course}/>
+      course = {course}
+      />
       <section className="detail">
         <h4>
           <ul>

@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import MyOption from './MyOption';
 import { addToCart2 } from '../api/api';
 function DetailOption({course}){
-
   const [selectedColor,setSelectedColor] = useState(course.colors[0]);
   const [selectedOption,setSelectedOption] = useState([]);
   const [myOption,setMyOption] = useState([]);
 
+  const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
 
   function addToOption(color,size,name){
     let options = {
-      id : selectedOption.length,
+      id :  ItemsInTheCart.length===0 ? selectedOption.length : ItemsInTheCart.length + selectedOption.length,
       name : name,
       color : color,
       size : size,
@@ -19,20 +19,19 @@ function DetailOption({course}){
       price : course.price1,
       img : course.imgByColor[color]
     };
-    
-    return setSelectedOption([...selectedOption,options]);
+    setSelectedOption([...selectedOption,options]);
   }
 
    useEffect(()=>{
     let filterOption = selectedOption.filter((opt,index) => selectedOption.findIndex(item => item.color === opt.color && item.size === opt.size) === index);
-    return setMyOption(filterOption);
+    setMyOption(filterOption);
   },[selectedOption]);
 
   const notice = () => {
     myOption.length === 0 ? alert('장바구니에 담을 물건이 없습니다.') : alert('장바구니에 담겼습니다.');
   }
-
-     return(
+     
+    return(
     <figure className="ProDetail">
       <img src= {course.imgByColor[selectedColor]} alt={course.name} />
       <figcaption>
@@ -90,7 +89,7 @@ function DetailOption({course}){
           >
             장바구니 담기
           </button>
-          <button type="button" >
+          <button type="button">
             <Link to="/login">바로 구매</Link>
           </button>
         </p>

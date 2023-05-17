@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import { BsBag } from "react-icons/bs";
 import './css/Nav.css';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function Nav({sum}){
+function Nav(){
+  // const [cartSum,setCartSum] = useState(0);
+  const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
+  const cartSum = JSON.parse(sessionStorage.getItem('cartSum')) || 0;
+  // useEffect(()=>{
+    
+  // },[ItemsInTheCart])  
 
+  
   return(
     <nav>
       <ul className="gnb">
@@ -14,7 +21,7 @@ function Nav({sum}){
           <Link to="/cart">
             <BsBag />
           <span>
-            {sum}
+            {cartSum}
           </span>
           </Link>
         </li>
