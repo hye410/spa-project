@@ -1,11 +1,8 @@
-import Nav from '../components/Nav';
-// import Nav2 from '../components/Nav2';
 import './css/About.css';
 
 function About(){
   return(
     <>
-    <Nav />
     <article id="about">
       <h3>브랜드소개</h3>
       <section id="about1">

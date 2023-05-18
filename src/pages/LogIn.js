@@ -1,4 +1,3 @@
-import Nav from '../components/Nav';
 import './css/LogIn.css';
 import $ from 'jquery';
 import { useEffect, useState } from 'react';
@@ -8,7 +7,6 @@ function LogIn(){
 
   return(
     <>
-    <Nav />
     <article id="login">
     <h3>회원 로그인</h3>
 

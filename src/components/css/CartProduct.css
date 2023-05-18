@@ -26,24 +26,20 @@
   font-size : 12px;
 }
 
-/* .addedItems>li:nth-child(4){
+
+.addedItems>li:nth-child(4){
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 .addedItems>li>span{
-  width : 13px;
-  height : 13px;
+  width : 15px;
+  height : 15px;
   display: block;
   /* background-color: cadetblue; */
   border : 1px solid #000;
   margin : 0 5px;
-}
-
-.addedItems button{
-  width : 18px;
-  height : 18px;
-  margin : 0 5px;
+  cursor: pointer;
 }
 
 

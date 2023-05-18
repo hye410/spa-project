@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import Nav from '../components/Nav';
 import Nav2 from '../components/Nav2';
 import './css/Home.css';
 import './jquery/Home-jq';
@@ -10,7 +9,6 @@ function Home(){
   const navigate = useNavigate();
   return(
     <div>
-      <Nav />
       <Nav2 />
     <div id="box01">
       <ul className="swiper">

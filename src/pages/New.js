@@ -1,4 +1,3 @@
-import Nav from '../components/Nav';
 import Nav2 from '../components/Nav2';
 import NewProduct from '../components/NewProduct';
 import "./css/New.css";
@@ -25,7 +24,6 @@ function New(){
 
   return(
     <>
-    <Nav />
     <Nav2 />
     <article id="new">
         <h3>Home/New ARRIVALS</h3>

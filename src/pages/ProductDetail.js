@@ -1,4 +1,3 @@
-import Nav from '../components/Nav';
 import Nav2 from '../components/Nav2';
 import DetailOption from '../components/DetailOption';
 import Review from '../components/Review';
@@ -14,6 +13,7 @@ function ProductDetail(){
   const course = courseByDetail(courseDetail);
   const [sortBy,setSortBy] = useState('date');
 
+
 const sumRating = course.review.reduce((acc,{rating1})=>{
   return acc = acc+= rating1
 },0)
@@ -27,7 +27,6 @@ const reviewList = course.review.sort((a,b) => {return(
 
   return(
     <>
-    <Nav />
     <Nav2 />
     <article id="DetailPRO">
       <h3>

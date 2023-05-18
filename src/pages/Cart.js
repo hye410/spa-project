@@ -1,27 +1,33 @@
-import Nav from '../components/Nav';
 import './css/Cart.css';
 import CartProduct from '../components/CartProduct';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function Cart(){
 
+  const [sumPrice,setSumPrice] = useState(0);
+
+
+
   return(
     <>
-    <Nav />
     <article id="cart">
       <h3><Link to="/">Home</Link>/장바구니</h3>
       <section>
         <h4>장바구니</h4>
         <div className="cartList">
           <ul>         
-            <li><input type="checkbox" /></li>
+            <li>
+              <input type="checkbox" name="check"
+              />
+            </li>
             <li>상품명</li>
             <li>가격</li>
             <li>수량</li>
             <li>총금액</li>
             <li>삭제</li>
           </ul>
-          <CartProduct />
+          <CartProduct setSumPrice={setSumPrice} />
         </div>
         <p>
           <button type="button">선택삭제</button>
@@ -31,16 +37,21 @@ function Cart(){
       <ul className="sum">
         <li>
           <p>총 주문 금액</p>
+          {sumPrice.toLocaleString('ko-kr')}원
         </li>
         <li>+</li>
         <li>
           <p>배송비</p>
-          가격
+          {
+           (sumPrice >= 20000 ? 0 : 2000).toLocaleString('ko-kr')
+          }원
         </li>
         <li>=</li>
         <li>
           <p>총 결제 금액</p>
-          가격
+          {
+            (sumPrice >= 20000 ? sumPrice : (sumPrice + 2000)).toLocaleString('ko-kr')
+          }원
         </li>
       </ul>
       <p>

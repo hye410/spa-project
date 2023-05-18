@@ -2,12 +2,13 @@ import { useState , useEffect } from "react";
 import { Link } from "react-router-dom";
 import MyOption from './MyOption';
 import { addToCart2 } from '../api/api';
-function DetailOption({course}){
+function DetailOption({course,setCartSum}){
   const [selectedColor,setSelectedColor] = useState(course.colors[0]);
   const [selectedOption,setSelectedOption] = useState([]);
   const [myOption,setMyOption] = useState([]);
 
   const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
+
 
   function addToOption(color,size,name){
     let options = {

@@ -4,14 +4,6 @@ import './css/Nav.css';
 import { useEffect, useState } from "react";
 
 function Nav(){
-  // const [cartSum,setCartSum] = useState(0);
-  const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
-  const cartSum = JSON.parse(sessionStorage.getItem('cartSum')) || 0;
-  // useEffect(()=>{
-    
-  // },[ItemsInTheCart])  
-
-  
   return(
     <nav>
       <ul className="gnb">
@@ -21,7 +13,6 @@ function Nav(){
           <Link to="/cart">
             <BsBag />
           <span>
-            {cartSum}
           </span>
           </Link>
         </li>

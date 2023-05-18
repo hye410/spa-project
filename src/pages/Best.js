@@ -1,4 +1,3 @@
-import Nav from '../components/Nav';
 import BestProduct from '../components/BestProduct';
 import "./css/Best.css";
 
@@ -6,7 +5,6 @@ function Best(){
 
   return(
     <>
-    <Nav />
     <article>
         <h3>Home/title</h3>
       <section>

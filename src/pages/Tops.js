@@ -1,9 +1,8 @@
-import Nav from "../components/Nav";
 
 function Tops(){
   return(
     <>
-    <Nav />
+
     </>
   )
 }
