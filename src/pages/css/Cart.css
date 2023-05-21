@@ -113,5 +113,21 @@ article#cart{
 
 #cart>p>button:last-child{
   background-color: #1a1a1a;
+}
+
+#cart>p>button:last-child>a{
   color : #fff;
+}
+
+#cart .empty{
+  border : 1px solid #1a1a1a;
+  font-size : 40px;
+  text-align: center;
+  height : calc(100vh - 400px);
+}
+
+#cart .empty>p>svg{
+  font-size: 80px;
+  padding : 60px 0;
+  margin-bottom : 40px;
 }

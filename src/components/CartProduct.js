@@ -2,11 +2,10 @@ import { MdOutlineCancel } from "react-icons/md";
 import './css/CartProduct.css';
 import { useEffect, useState } from "react";
 
-function CartProduct({setSumPrice}){
-  const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
-  
-  const [cartList,setCartList] = useState(ItemsInTheCart);
+function CartProduct({setSumPrice,checkedItems,setCheckedItems,cartList,setCartList}){
+
   const [render,setRender] = useState(0);
+
 
   const RemoveFromCart = (target) => {
     const list = cartList.filter(item => item.id !== target);
@@ -22,10 +21,26 @@ function CartProduct({setSumPrice}){
     setSumPrice((sumPrice()));
   },[cartList])
 
+  const selectSingle = (checked,id) => {
+    if(checked){
+      setCheckedItems(prev => [...prev,id]);
+    }else{
+      setCheckedItems(checkedItems.filter(item => item !== id))
+    }
+  }
+
+
   return(
     cartList.map((item,index) => 
     <ul key={index} className="addedItems">
-      <li><input type="checkbox" name="check" /></li>
+      <li>
+        <input 
+        name={`select${item.name}`}
+        type="checkbox"
+        onChange={(e) => selectSingle(e.target.checked,item.id)}
+        checked={checkedItems.includes(item.id) ? true : false}
+        />
+      </li>
       <li>
         <p><img src={item.img} alt={item.name} /></p>
         <p>

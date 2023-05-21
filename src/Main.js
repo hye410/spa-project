@@ -16,7 +16,7 @@ import Pants from './pages/Pants';
 import HomeWear from './pages/HomeWear';
 import ProductDetail from './pages/ProductDetail';
 import NotFound from './pages/NotFound';
-import { useState } from "react";
+import Toy from './pages/Toy';
 
 function Main(){
 
@@ -62,7 +62,8 @@ function Main(){
             <Route index element={<HomeWear />} />;
             <Route path=":courseDetail" element={<ProductDetail />}/>
           </Route>;
-          <Route path="*" element={<NotFound />}/>.
+          <Route path="*" element={<NotFound />}/>
+          <Route path="/toy" element={<Toy />} />
         </Routes>
       </App>
     </BrowserRouter>
