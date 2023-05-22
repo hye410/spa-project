@@ -1,35 +1,64 @@
-import BestProduct from '../components/BestProduct';
-import "./css/Best.css";
+import Nav2 from '../components/Nav2';
+import BestProduct from '../components/NewProduct';
+import "./css/common.css";
+import bestData from '../api/best.json';
+import { useState } from 'react';
+import Pagination from '../components/Pagination';
+import { Link } from 'react-router-dom';
 
 function Best(){
+  const [order,setOrder] = useState('date');
+  const sortItems = bestData.sort((a,b) => (order === 'price2') ? a[order] - b[order] : b[order]-a[order]);
+  const [toggle,setToggle] = useState(false);
+
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const postsPerPage = 9;
+  const indexOfLast = currentPage * postsPerPage;
+  const indexOfFirst = indexOfLast - postsPerPage;
+
+  const currentPost = bestData.slice(indexOfFirst,indexOfLast);
+
 
   return(
     <>
-    <article>
-        <h3>Home/title</h3>
+    <Nav2 />
+    <article id="products">
+        <h3><Link to="/">Home</Link>/Best</h3>
       <section>
-        <h4><img src="./images/best-logo.jpg" alt="bestLogo" /></h4>
-        <div>
-          <p>55 Items</p>
-          <ul>
-            <li>
-              <label htmlFor="color">컬러</label>
-              <ul className="color">
-                <li>all</li>
-              </ul>
-            </li>
-            <li>
-              <label htmlFor="sort">정렬</label>
+        <h4><img src="./images/best-logo.jpg" alt="bestLogo" /></h4>      
+        <div className="pro">
+          <p>{currentPost.length} Items</p>
+          <div onClick={()=>setToggle(!toggle)}>
+            정렬
+            {
+              toggle == true ? 
               <ul className="sort">
-                <li>all</li>
+                <li onClick={()=>setOrder('popularity')}>인기순</li>
+                <li onClick={()=>setOrder('recommendation')}>추천순</li>
+                <li onClick={()=>setOrder('date')}>최신순</li>
+                <li onClick={()=>setOrder('hits')}>조회순</li>
+                <li onClick={()=>setOrder('price1')}>높은 가격순</li>
+                <li onClick={()=>setOrder('price2')}>낮은 가격순</li>
               </ul>
-            </li>
-          </ul>
-        </div>
-        <div className="bestList">
-          <BestProduct />
+              : null
+            }
+          </div>
+          </div>
+          <div className="productsList">
+            {currentPost.map(bestItem => 
+             <BestProduct
+            key={bestItem.id}
+             newItem = {bestItem} />
+          )}
         </div>
       </section>
+        <Pagination
+        pages = {setCurrentPage}
+        postsPerPage = {postsPerPage}
+        totalPages = {bestData.length}     
+         />
     </article>
     </>
   )

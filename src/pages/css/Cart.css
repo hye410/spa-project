@@ -106,9 +106,12 @@ article#cart{
   margin : 0 2px;
   padding : 10px 20px;
   border : 1px solid #a59e9e;
-  background-color: #fff;
-  color : #333;
+  background-color: #fff;  
   cursor: pointer;
+}
+
+#cart>p>button>a{
+  color : #333;
 }
 
 #cart>p>button:last-child{

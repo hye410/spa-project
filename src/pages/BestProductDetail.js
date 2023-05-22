@@ -6,12 +6,12 @@ import './jquery/ProductDetail-jq.js';
 import { Link, useParams } from 'react-router-dom';
 import { courseByDetail } from '../api/api';
 import { useState } from 'react';
-import newData from '../api/new.json';
+import bestData from '../api/best.json';
 
 function ProductDetail(){
   const[toggle,setToggle] = useState(false);
   const {courseDetail} = useParams();
-  const course = courseByDetail(newData,courseDetail);
+  const course = courseByDetail(bestData,courseDetail);
   const [sortBy,setSortBy] = useState('date');
 
 

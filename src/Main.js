@@ -15,6 +15,7 @@ import Tops from './pages/Tops';
 import Pants from './pages/Pants';
 import HomeWear from './pages/HomeWear';
 import ProductDetail from './pages/ProductDetail';
+import BestProductDetail from './pages/BestProductDetail';
 import NotFound from './pages/NotFound';
 import Toy from './pages/Toy';
 
@@ -44,7 +45,7 @@ function Main(){
           </Route>;
           <Route path="/best">
             <Route index element={<Best />} />;
-            <Route path=":courseDetail" element={<ProductDetail />}/>
+            <Route path=":courseDetail" element={<BestProductDetail />}/>
           </Route>;
           <Route path="/outer">
             <Route index element={<Outer />} />;

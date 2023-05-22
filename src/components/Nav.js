@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { BsBag } from "react-icons/bs";
 import './css/Nav.css';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Nav(){
+  const [cartNum,setCartNum] = useState(0);
+
+  const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [] ;
+
+
   return(
     <nav>
       <ul className="gnb">
@@ -13,6 +18,7 @@ function Nav(){
           <Link to="/cart">
             <BsBag />
           <span>
+            {cartNum}
           </span>
           </Link>
         </li>

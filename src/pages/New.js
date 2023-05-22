@@ -4,13 +4,13 @@ import "./css/New.css";
 import newData from '../api/new.json';
 import { useState } from 'react';
 import Pagination from '../components/Pagination';
+import { Link } from 'react-router-dom';
 
 function New(){
   const [order,setOrder] = useState('date');
   const sortItems = newData.sort((a,b) => (order === 'price2') ? a[order] - b[order] : b[order]-a[order]);
   const [toggle,setToggle] = useState(false);
 
-  // 한 페이지에 들어갈 갯수, 인덱스1번 인덱스 마지막번호, 페이지번호,
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -20,16 +20,14 @@ function New(){
 
   const currentPost = newData.slice(indexOfFirst,indexOfLast);
 
-  // console.log(currentPost)
 
   return(
     <>
     <Nav2 />
     <article id="new">
-        <h3>Home/New ARRIVALS</h3>
+        <h3><Link to="/">Home</Link>/New ARRIVALS</h3>
       <section>
-        <h4><img src="./images/new-logo.png" alt="newLogo" /></h4>
-        {/* 로고 다시 만들기 */}        
+        <h4><img src="./images/new-logo.png" alt="newLogo" /></h4>      
         <div className="new">
           <p>{currentPost.length} Items</p>
           <div onClick={()=>setToggle(!toggle)}>

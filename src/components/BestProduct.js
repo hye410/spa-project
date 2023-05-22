@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
 
-function BestProduct(){
+function BestProduct({bestItem}){
   return(
     <figure>
-      <Link to="/best/courseDetail">
-        <img src= "./images/home-tops.jpg" alt="상품이름" />
+      <Link to={`/best/${bestItem.course}`}>
+        <img src= {bestItem.imgUrl} alt={bestItem.name} />
       </Link>
       <figcaption>
         <dl>
-          <Link to="/best/courseDetail"><dt>상품명</dt></Link>
-          <dd>설명</dd>
-          <dd>가격<del>할이전가격</del></dd>
+          <Link to={`/best/${bestItem.course}`}><dt>{bestItem.name}</dt></Link>
+          <dd>{bestItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>
     </figure>

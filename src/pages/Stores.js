@@ -23,9 +23,7 @@ function Stores(){
           <option>인천</option>
         </select>
         <select name="district">
-          {
-            subArea[0].map((item,index) => <option key ={index}>{item}</option>)
-          }
+
         </select>
         <p>
           <input type="text" placeholder="원하시는 매장명을 검색하세요."/>

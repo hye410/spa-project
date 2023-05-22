@@ -1,0 +1,172 @@
+[
+  {
+    "id" : 1,
+    "name" : "NEW 한소희 케이블 스트라이프 크루넥 스웨터",
+    "imgUrl" : "/images/best/best1-1.jpg",
+    "price1" : 49800,
+    "price2" : 49800,
+    "recommendation" : 73423,
+    "hits" : 9734,
+    "kind" : "Tops",
+    "date" : 1677474998865,
+    "popularity" : 795354,
+    "course" : "detail_best_01",
+    "num" : 1,
+    "detailImg" : "/images/best/best1-detail.jpg",
+    "colors" : ["03 아이보리+네이비 STR","01 아이보리+핑크 STR"],
+    "sizes" : 
+      {
+       "03 아이보리+네이비 STR" : ["S","M","L"],
+       "01 아이보리+핑크 STR" : ["S","M","L"]
+      },
+    "imgByColor" : 
+      {
+       "03 아이보리+네이비 STR" : "/images/best/best1-1.jpg",
+        "01 아이보리+핑크 STR" : "/images/best/best1-2.jpg"
+      },
+    "imgByName" : 
+      {
+        "03 아이보리+네이비 STR" : "/images/best/best1-1.jpg",
+        "01 아이보리+핑크 STR" : "/images/best/best1-2.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 16768519999000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "유지민",
+            "text" : "너무 예뻐요!!"
+          },
+          {
+            "id":2,
+            "date":16578517878789,
+            "rating1":1,
+            "rating2":1,
+            "name":"강겨울",
+            "text":"보풀이 나서 왔어요.."
+          },
+          {
+            "id":3,
+            "date":1655547700000,
+            "rating1":5,
+            "rating2":5,
+            "name":"이미연",
+            "text":"예뻐서 다른 색상도 하나 더 살거예요"
+          },
+          {
+            "id":4,
+            "date":1679679870000,
+            "rating1":4,
+            "rating2":4,
+            "name":"진미미",
+            "text":"색상 너무 예뻐요 다들 예쁘대요~"
+          },
+          {
+            "id":5,
+            "date":1645679876000,
+            "rating1":5,
+            "rating2":5,
+            "name":"차정숙",
+            "text":"다들 어디서 샀냐고 물어봐요! 너무 예쁘네요^^"
+          },
+          {
+            "id":6,
+            "date":1676837999000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서이랑",
+            "text":"강추합니다"
+          },
+          {
+            "id":7,
+            "date":1683079999000,
+            "rating1":4,
+            "rating2":4,
+            "name":"이민지",
+            "text":"예뻐요!"
+          }
+        ]
+  },
+  {
+    "id" : 2,
+    "name" : "NEW 한소희 코튼 케이블 폴로 스웨터",
+    "imgUrl" : "/images/best/best2-2.jpg",
+    "price1" : 44800,
+    "price2" : 44800,
+    "recommendation" : 63423,
+    "hits" : 8734,
+    "kind" : "Tops",
+    "date" : 16774749778865,
+    "popularity" : 744354,
+    "course" : "detail_best_02",
+    "num" : 1,
+    "detailImg" : "/images/best/best2-detail.jpg",
+    "colors" : ["01 화이트","02 옐로우","03 핑크","04 샐러리그린"],
+    "sizes" : 
+      {
+       "01 화이트" : ["S","M"],
+       "02 옐로우" : ["S","M","L"],
+       "03 핑크" : ["S","M"],
+       "04 샐러리그린" : ["S","M","L"]
+      },
+    "imgByColor" : 
+      {
+       "01 화이트" : "/images/best/best2-1.jpg",
+        "02 옐로우" : "/images/best/best2-2.jpg",
+        "03 핑크" : "/images/best/best2-3.jpg",
+        "04 샐러리그린" : "/images/best/best2-4.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 화이트" : "/images/best/best2-1.jpg",
+        "02 옐로우" : "/images/best/best2-2.jpg",
+        "03 핑크" : "/images/best/best2-3.jpg",
+        "04 샐러리그린" : "/images/best/best2-4.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 16768519999000,
+            "rating1" : 3,
+            "rating2" : 3,
+            "name" : "강한나",
+            "text" : "노란색이 화면보다 안 예뻐요.."
+          },
+          {
+            "id":2,
+            "date":16578578878789,
+            "rating1":5,
+            "rating2":5,
+            "name":"김사랑",
+            "text":"산뜻해 보이고 좋네요"
+          },
+          {
+            "id":3,
+            "date":1655542300000,
+            "rating1":5,
+            "rating2":5,
+            "name":"장나라",
+            "text":"예뻐요"
+          },
+          {
+            "id":4,
+            "date":1679679123000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최민정",
+            "text":"사이즈가 좀 크네요ㅠㅠ"
+          },
+          {
+            "id":5,
+            "date":1645679876000,
+            "rating1":5,
+            "rating2":5,
+            "name":"박소희",
+            "text":"너무 예쁘네요^^"
+          }
+        ]
+  }
+]
