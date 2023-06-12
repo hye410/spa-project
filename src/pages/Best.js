@@ -1,5 +1,5 @@
 import Nav2 from '../components/Nav2';
-import BestProduct from '../components/NewProduct';
+import BestProduct from '../components/BestProduct';
 import "./css/common.css";
 import bestData from '../api/best.json';
 import { useState } from 'react';
@@ -49,8 +49,8 @@ function Best(){
           <div className="productsList">
             {currentPost.map(bestItem => 
              <BestProduct
-            key={bestItem.id}
-             newItem = {bestItem} />
+             key={bestItem.id}
+             bestItem = {bestItem} />
           )}
         </div>
       </section>

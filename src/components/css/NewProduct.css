@@ -1,36 +1,36 @@
-.newList{
+.productsList{
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
   margin-bottom : 60px;
 }
 
-.newList>figure{
+.productsList>figure{
   width:calc(33.3333% - 1em);
   margin: 0 0.5em;
   position:relative;
 }
 
-.newList>figure>a>img{
+.productsListfigure>a>img{
   margin-bottom : 30px;
 }
 
-.newList>figure>figcaption{
+.productsList>figure>figcaption{
   text-align: center;  
 
 }
 
-.newList>figure>figcaption a{
+.productsList>figure>figcaption a{
   text-decoration: none;
 }
 
-.newList>figure>figcaption>dl dt{
+.productsList>figure>figcaption>dl dt{
   font-weight: bold;
   color : #242424;
   margin-bottom : 8px;
 }
 
-.newList>figure>figcaption>dl dd{
+.productsList>figure>figcaption>dl dd{
   color : rgb(216, 67, 41);
   font-weight: bold;
   margin-bottom : 30px;

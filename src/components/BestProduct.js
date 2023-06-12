@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import './css/NewProduct.css';
 
 function BestProduct({bestItem}){
+
   return(
     <figure>
       <Link to={`/best/${bestItem.course}`}>

@@ -70,10 +70,10 @@ function Home(){
     <div id="box04">
       <h3>Best 5</h3>
         <ul>
-          <li><img src="./images/best/best1.jpg" alt="bestItem1"/></li>
-          <li><img src="./images/best/best2.jpg" alt="bestItem2"/></li>
-          <li><img src="./images/best/best3.jpg" alt="bestItem3"/></li>
-          <li><img src="./images/best/best4.jpg" alt="bestItem4"/></li>
+          <li><img src="/images/best/best1-1.jpg" alt="bestItem1"/></li>
+          <li><img src="/images/best/best2-1.jpg" alt="bestItem2"/></li>
+          <li><img src="/images/best/best2-3.jpg" alt="bestItem3"/></li>
+          <li><img src="/images/best/best2-4.jpg" alt="bestItem4"/></li>
         </ul>
     </div>
     </div>

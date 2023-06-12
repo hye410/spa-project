@@ -1,3 +1,5 @@
+
+
 export function courseByDetail(data,courseDetail){
   return data.find(({course}) => course === courseDetail);
 }

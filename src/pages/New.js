@@ -46,7 +46,7 @@ function New(){
             }
           </div>
           </div>
-          <div className="newList">
+          <div className="productsList">
             {currentPost.map(newItem => {return(
              <NewProduct
             key={newItem.id}

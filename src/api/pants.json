@@ -1,0 +1,95 @@
+[
+  {
+    "id" : 1,
+    "name" : "NEW 쿨 스트레이트 슬랙스",
+    "imgUrl" : "/images/pants/pants1-1.jpg",
+    "price1" : 49800,
+    "price2" : 49800,
+    "recommendation" : 4323,
+    "hits" : 2134,
+    "kind" : "Pants",
+    "date" : 167744577887522,
+    "popularity" : 41154,
+    "course" : "detail_pants_01",
+    "num" : 1,
+    "detailImg" : "/images/pants/pants1-detail.jpg",
+    "colors" : ["01 네이비","02 에크루","03 베이지"],
+    "sizes" : 
+      {
+       "01 네이비" : ["S","M"],
+        "02 에크루" : ["S","M"],
+        "03 베이지" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 네이비" : "/images/pants/pants1-1.jpg",
+        "02 에크루" : "/images/pants/pants1-2.jpg",
+        "03 베이지" : "/images/pants/pants1-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 네이비" : "/images/pants/pants1-1.jpg",
+        "02 에크루" : "/images/pants/pants1-2.jpg",
+        "03 베이지" : "/images/pants/pants1-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  }
+]

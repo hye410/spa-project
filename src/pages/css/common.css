@@ -29,7 +29,7 @@ article#products>section>div{
   justify-content: space-between;
 }
 
-article#products>section>div.new>div{
+article#products>section>div>div{
   position: relative;
   width : 94.5px;
   text-align: center;

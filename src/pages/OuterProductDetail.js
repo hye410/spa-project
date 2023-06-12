@@ -6,12 +6,12 @@ import './jquery/ProductDetail-jq.js';
 import { Link, useParams } from 'react-router-dom';
 import { courseByDetail } from '../api/api';
 import { useState } from 'react';
-import bestData from '../api/best.json';
+import outerData from '../api/outer.json';
 
-function BestProductDetail(){
+function OuterProductDetail(){
   const[toggle,setToggle] = useState(false);
   const {courseDetail} = useParams();
-  const course = courseByDetail(bestData,courseDetail);
+  const course = courseByDetail(outerData,courseDetail);
   const [sortBy,setSortBy] = useState('date');
 
 
@@ -84,4 +84,4 @@ const reviewList = course.review.sort((a,b) => {return(
   )
 }
 
-export default BestProductDetail;
+export default OuterProductDetail;

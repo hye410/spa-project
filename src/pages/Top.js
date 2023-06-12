@@ -1,15 +1,16 @@
 import Nav2 from '../components/Nav2';
-import OuterProduct from '../components/OuterProduct';
+import TopProduct from '../components/TopProduct';
 import "./css/common.css";
-import outerData from '../api/outer.json';
+import topData from '../api/top.json';
 import { useState } from 'react';
 import Pagination from '../components/Pagination';
 import { Link } from 'react-router-dom';
 
-function Outer(){
+function Top(){
   const [order,setOrder] = useState('date');
-  const sortItems = outerData.sort((a,b) => (order === 'price2') ? a[order] - b[order] : b[order]-a[order]);
+  const sortItems = topData.sort((a,b) => (order === 'price2') ? a[order] - b[order] : b[order]-a[order]);
   const [toggle,setToggle] = useState(false);
+
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -17,14 +18,14 @@ function Outer(){
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFirst = indexOfLast - postsPerPage;
 
-  const currentPost = outerData.slice(indexOfFirst,indexOfLast);
+  const currentPost = topData.slice(indexOfFirst,indexOfLast);
 
 
   return(
     <>
     <Nav2 />
     <article id="products">
-        <h3><Link to="/">Home</Link>/Outer</h3>
+        <h3><Link to="/">Home</Link>/Top</h3>
       <section>
         <h4><img src="./images/best-logo.jpg" alt="bestLogo" /></h4>      
         <div className="pro">
@@ -46,21 +47,21 @@ function Outer(){
           </div>
           </div>
           <div className="productsList">
-            {currentPost.map(outerItem => 
-             <OuterProduct
-             key={outerItem.id}
-             outerItem = {outerItem} />
+            {currentPost.map(topItem => 
+             <TopProduct
+             key={topItem.id}
+             topItem = {topItem} />
           )}
         </div>
       </section>
         <Pagination
         pages = {setCurrentPage}
         postsPerPage = {postsPerPage}
-        totalPages = {outerData.length}     
+        totalPages = {topData.length}     
          />
     </article>
     </>
   )
 }
 
-export default Outer;
+export default Top;
