@@ -8,8 +8,10 @@ function Home(){
 
   const navigate = useNavigate();
   return(
+    <>
+    <Nav2 />
     <div>
-      <Nav2 />
+      {/* <Nav2 /> */}
     <div id="box01">
       <ul className="swiper">
         <li><img src="./images/home-main.jpg" alt="mainImage1" /></li>
@@ -77,7 +79,7 @@ function Home(){
         </ul>
     </div>
     </div>
-  
+  </>
   )
 
 }
