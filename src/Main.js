@@ -3,9 +3,6 @@ import App from "./components/App";
 import Home from './pages/Home';
 import About from './pages/About';
 import Stores from './pages/Stores';
-import Event from './pages/Event';
-import Event1 from './pages/Event1';
-import Event2 from './pages/Event2';
 import LogIn from './pages/LogIn';
 import Cart from './pages/Cart';
 import New from './pages/New';
@@ -19,6 +16,7 @@ import BestProductDetail from './pages/BestProductDetail';
 import OuterProductDetail from './pages/OuterProductDetail'
 import TopProductDetail from './pages/TopProductDetail';
 import PantsProductDetail from "./pages/PantsProductDetail";
+import HomeWearProductDetail from "./pages/HomeWearProductDetail";
 import NotFound from './pages/NotFound';
 import Toy from './pages/Toy';
 
@@ -31,11 +29,6 @@ function Main(){
           <Route path="/" element={<Home />} />;
           <Route path="/about" element={<About />} />;
           <Route path="/stores" element={<Stores />} />;
-          <Route path="/event">
-          <Route index element={<Event />} />;
-            <Route path="/event/event1" element={<Event1 />} />;
-            <Route path="/event/event2" element={<Event2 />} />;
-          </Route>
           <Route path="/login" element={<LogIn />} />;
           <Route path="/cart" element={<Cart />} />;
           <Route path="/new">
@@ -60,7 +53,7 @@ function Main(){
           </Route>;
           <Route path="/homewear">
             <Route index element={<HomeWear />} />;
-            <Route path=":courseDetail" element={<ProductDetail />}/>
+            <Route path=":courseDetail" element={<HomeWearProductDetail />}/>
           </Route>;
           <Route path="*" element={<NotFound />}/>
           <Route path="/toy" element={<Toy />} />

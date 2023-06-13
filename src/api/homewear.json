@@ -1,0 +1,256 @@
+[
+  {
+    "id" : 1,
+    "name" : "NEW 라운지 와이드 크롭 팬츠",
+    "imgUrl" : "/images/homewear/homewear1-1.jpg",
+    "price1" : 29800,
+    "price2" : 29800,
+    "recommendation" : 3423,
+    "hits" : 1534,
+    "kind" : "HomeWear",
+    "date" : 16774747844522,
+    "popularity" : 48354,
+    "course" : "detail_homewear_01",
+    "num" : 1,
+    "detailImg" : "/images/homewear/homewear1-detail.jpg",
+    "colors" : ["01 미드헤더그레이","02 블랙"],
+    "sizes" : 
+      {
+       "01 미드헤더그레이" : ["S","M"],
+        "02 블랙" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 미드헤더그레이" : "/images/homewear/homewear1-1.jpg",
+        "02 블랙" : "/images/homewear/homewear1-2.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 미드헤더그레이" : "/images/homewear/homewear1-1.jpg",
+        "02 블랙" : "/images/homewear/homewear1-2.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 2,
+    "name" : "라운드 저지 스트레이트 팬츠",
+    "imgUrl" : "/images/homewear/homewear2-1.jpg",
+    "price1" : 24800,
+    "price2" : 24800,
+    "recommendation" : 7423,
+    "hits" : 3534,
+    "kind" : "HomeWear",
+    "date" : 16774745644522,
+    "popularity" : 99954,
+    "course" : "detail_homewear_02",
+    "num" : 1,
+    "detailImg" : "/images/homewear/homewear2-detail.jpg",
+    "colors" : ["01 미드헤더그레이"],
+    "sizes" : 
+      {
+       "01 미드헤더그레이" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 미드헤더그레이" : "/images/homewear/homewear2-1.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 미드헤더그레이" : "/images/homewear/homewear2-1.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "김사랑",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":2,
+            "rating2":2,
+            "name":"최승희",
+            "text":"무릎 잘 늘어날 거 같아요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":5,
+            "rating2":5,
+            "name":"차정숙",
+            "text":"예뻐요 다른 색상도 출시해주세요ㅜㅜ"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":5,
+            "rating2":5,
+            "name":"최인호",
+            "text":"여자친구가 좋아하네요"
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":4,
+            "rating2":4,
+            "name":"장원영",
+            "text":"무난하게 잘 입을 거 같아요~^^"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"안유진",
+            "text":"예뻐요~"
+          }
+        ]
+  },
+  {
+    "id" : 3,
+    "name" : "라운지웨어 반바지",
+    "imgUrl" : "/images/homewear/homewear3-1.jpg",
+    "price1" : 10000,
+    "price2" : 10000,
+    "recommendation" : 423,
+    "hits" : 534,
+    "kind" : "HomeWear",
+    "date" : 16774747844889,
+    "popularity" : 8354,
+    "course" : "detail_homewear_03",
+    "num" : 1,
+    "detailImg" : "/images/homewear/homewear3-detail.jpg",
+    "colors" : ["01 블루","02 베이지","03 블랙"],
+    "sizes" : 
+      {
+       "01 블루" : ["S","M"],
+        "02 베이지" : ["S","M"],
+        "03 블랙" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 블루" : "/images/homewear/homewear3-1.jpg",
+        "02 베이지" : "/images/homewear/homewear3-2.jpg",
+        "03 블랙" : "/images/homewear/homewear3-2.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 블루" : "/images/homewear/homewear3-1.jpg",
+        "02 베이지" : "/images/homewear/homewear3-2.jpg",
+        "03 블랙" : "/images/homewear/homewear3-2.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  }
+]

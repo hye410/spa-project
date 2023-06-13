@@ -91,5 +91,188 @@
             "text":"불량품이 왔어요ㅠ"
           }
         ]
+  },
+  {
+    "id" : 2,
+    "name" : "NEW 한소희 레인코트 (Unisex)",
+    "imgUrl" : "/images/outer/outer2-1.jpg",
+    "price1" : 79800,
+    "price2" : 79800,
+    "recommendation" : 3423,
+    "hits" : 2534,
+    "kind" : "Outer",
+    "date" : 16774755887522,
+    "popularity" : 1354,
+    "course" : "detail_outer_02",
+    "num" : 1,
+    "detailImg" : "/images/outer/outer1-detail.jpg",
+    "colors" : ["01 블랙","02 베이지"],
+    "sizes" : 
+      {
+       "01 블랙" : ["S","M"],
+        "02 베이지" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 블랙" : "/images/outer/outer2-1.jpg",
+        "02 베이지" : "/images/outer/outer2-2.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 블랙" : "/images/outer/outer2-1.jpg",
+        "02 베이지" : "/images/outer/outer2-2.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 4,
+            "rating2" : 4,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":2,
+            "rating2":2,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 3,
+    "name" : "린넨 블레이저",
+    "imgUrl" : "/images/outer/outer3-1.jpg",
+    "price1" : 49800,
+    "price2" : 49800,
+    "recommendation" : 5423,
+    "hits" : 5534,
+    "kind" : "Outer",
+    "date" : 16774755576522,
+    "popularity" : 1354,
+    "course" : "detail_outer_03",
+    "num" : 1,
+    "detailImg" : "/images/outer/outer3-detail.jpg",
+    "colors" : ["01 그린스몰체크","02 베이지","03 브라운스몰체크"],
+    "sizes" : 
+      {
+       "01 그린스몰체크" : ["S","M"],
+        "02 베이지" : ["S","M"],
+        "03 브라운스몰체크" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 그린스몰체크" : "/images/outer/outer3-1.jpg",
+        "02 베이지" : "/images/outer/outer3-2.jpg",
+        "03 브라운스몰체크" : "/images/outer/outer3-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 그린스몰체크" : "/images/outer/outer3-1.jpg",
+        "02 베이지" : "/images/outer/outer3-2.jpg",
+        "03 브라운스몰체크" : "/images/outer/outer3-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":2,
+            "rating2":2,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
   }
 ]

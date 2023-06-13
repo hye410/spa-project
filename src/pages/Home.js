@@ -11,7 +11,6 @@ function Home(){
     <>
     <Nav2 />
     <div>
-      {/* <Nav2 /> */}
     <div id="box01">
       <ul className="swiper">
         <li><img src="./images/home-main.jpg" alt="mainImage1" /></li>
@@ -31,7 +30,7 @@ function Home(){
           </Link>
         </li>
         <li>
-          <Link to="/tops">
+          <Link to="/top">
             <span>Tops</span>
             <img src="./images/home-tops.jpg" alt="tops" />
           </Link>

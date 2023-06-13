@@ -91,5 +91,191 @@
             "text":"불량품이 왔어요ㅠ"
           }
         ]
+  },
+  {
+    "id" : 2,
+    "name" : "NEW 한소희 프리미엄 띡저지 폴로 티셔츠",
+    "imgUrl" : "/images/top/top2-1.jpg",
+    "price1" : 34800,
+    "price2" : 34800,
+    "recommendation" : 98423,
+    "hits" : 9534,
+    "kind" : "Top",
+    "date" : 16774741237522,
+    "popularity" : 88354,
+    "course" : "detail_top_02",
+    "num" : 1,
+    "detailImg" : "/images/top/top2-detail.jpg",
+    "colors" : ["01 화이트","02 라이트헤더그레이","03 블랙"],
+    "sizes" : 
+      {
+       "01 화이트" : ["S","M"],
+        "02 라이트헤더그레이" : ["S","M"],
+        "03 블랙" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 화이트" : "/images/top/top2-1.jpg",
+        "02 라이트헤더그레이" : "/images/top/top2-2.jpg",
+        "03 블랙" : "/images/top/top2-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 화이트" : "/images/top/top2-1.jpg",
+        "02 라이트헤더그레이" : "/images/top/top2-2.jpg",
+        "03 블랙" : "/images/top/top2-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":4,
+            "rating2":4,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 3,
+    "name" : "NEW 프리미엄 띡저지 크루넥 티셔츠",
+    "imgUrl" : "/images/top/top3-1.jpg",
+    "price1" : 24800,
+    "price2" : 24800,
+    "recommendation" : 68423,
+    "hits" : 5534,
+    "kind" : "Top",
+    "date" : 16771231237522,
+    "popularity" : 8354,
+    "course" : "detail_top_03",
+    "num" : 1,
+    "detailImg" : "/images/top/top3-detail.jpg",
+    "colors" : ["01 퓨어그린","02 핑크","03 화이트"],
+    "sizes" : 
+      {
+       "01 퓨어그린" : ["S","M"],
+        "02 핑크" : ["S","M"],
+        "03 화이트" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 퓨어그린" : "/images/top/top3-1.jpg",
+        "02 핑크" : "/images/top/top3-2.jpg",
+        "03 화이트" : "/images/top/top3-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 퓨어그린" : "/images/top/top3-1.jpg",
+        "02 핑크" : "/images/top/top3-2.jpg",
+        "03 화이트" : "/images/top/top3-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "민소희",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":1,
+            "rating2":1,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
   }
 ]

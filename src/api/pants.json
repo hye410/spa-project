@@ -91,5 +91,284 @@
             "text":"불량품이 왔어요ㅠ"
           }
         ]
+  },
+  {
+    "id" : 2,
+    "name" : "NEW 한소희 나일론 카고팬츠",
+    "imgUrl" : "/images/pants/pants2-1.jpg",
+    "price1" : 59800,
+    "price2" : 59800,
+    "recommendation" : 6323,
+    "hits" : 6134,
+    "kind" : "Pants",
+    "date" : 167744577987522,
+    "popularity" : 31154,
+    "course" : "detail_pants_02",
+    "num" : 1,
+    "detailImg" : "/images/pants/pants2-detail.jpg",
+    "colors" : ["01 카키","02 핑크","03 블랙"],
+    "sizes" : 
+      {
+       "01 카키" : ["S","M"],
+        "02 핑크" : ["S","M"],
+        "03 블랙" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 카키" : "/images/pants/pants2-1.jpg",
+        "02 핑크" : "/images/pants/pants2-2.jpg",
+        "03 블랙" : "/images/pants/pants2-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 카키" : "/images/pants/pants2-1.jpg",
+        "02 핑크" : "/images/pants/pants2-2.jpg",
+        "03 블랙" : "/images/pants/pants2-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":2,
+            "rating2":2,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":3,
+            "rating2":3,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":5,
+            "rating2":5,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 3,
+    "name" : "NEW 한소희 미니테리 쇼츠",
+    "imgUrl" : "/images/pants/pants3-1.jpg",
+    "price1" : 34800,
+    "price2" : 34800,
+    "recommendation" : 7323,
+    "hits" : 7134,
+    "kind" : "Pants",
+    "date" : 167744577982442,
+    "popularity" : 27154,
+    "course" : "detail_pants_03",
+    "num" : 1,
+    "detailImg" : "/images/pants/pants3-detail.jpg",
+    "colors" : ["01 라이트헤더그레이","02 핑크","03 오트밀"],
+    "sizes" : 
+      {
+       "01 라이트헤더그레이" : ["S","M"],
+        "02 핑크" : ["S","M"],
+        "03 오트밀" : ["S","M"]
+      },
+    "imgByColor" : 
+      {
+       "01 라이트헤더그레이" : "/images/pants/pants3-1.jpg",
+        "02 핑크" : "/images/pants/pants3-2.jpg",
+        "03 오트밀" : "/images/pants/pants3-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 라이트헤더그레이" : "/images/pants/pants3-1.jpg",
+        "02 핑크" : "/images/pants/pants3-2.jpg",
+        "03 오트밀" : "/images/pants/pants3-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":4,
+            "rating2":4,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":2,
+            "rating2":2,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":2,
+            "rating2":2,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":3,
+            "rating2":3,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
+  },
+  {
+    "id" : 4,
+    "name" : "NEW 코튼 위켄숏",
+    "imgUrl" : "/images/pants/pants4-1.jpg",
+    "price1" : 29800,
+    "price2" : 29800,
+    "recommendation" : 9323,
+    "hits" : 9134,
+    "kind" : "Pants",
+    "date" : 167744577989982,
+    "popularity" : 117154,
+    "course" : "detail_pants_04",
+    "num" : 1,
+    "detailImg" : "/images/pants/pants4-detail.jpg",
+    "colors" : ["01 블루","02 크림","03 핑크"],
+    "sizes" : 
+      {
+       "01 블루" : ["S","M","L"],
+        "02 크림" :  ["S","M","L"],
+        "03 핑크" :  ["S","M","L"]
+      },
+    "imgByColor" : 
+      {
+       "01 블루" : "/images/pants/pants4-1.jpg",
+        "02 크림" : "/images/pants/pants4-2.jpg",
+        "03 핑크" : "/images/pants/pants4-3.jpg"
+      },
+    "imgByName" : 
+      {
+        "01 블루" : "/images/pants/pants4-1.jpg",
+        "02 크림" : "/images/pants/pants4-2.jpg",
+        "03 핑크" : "/images/pants/pants4-3.jpg"
+      },
+      "review" : 
+        [
+          {
+            "id" : 1,
+            "date" : 1676851200000,
+            "rating1" : 5,
+            "rating2" : 5,
+            "name" : "박연진",
+            "text" : "품질이 좋아요!! 강추합니다~"
+          },
+          {
+            "id":2,
+            "date":1657851200000,
+            "rating1":3,
+            "rating2":3,
+            "name":"이사라",
+            "text":"무난해요"
+          },
+          {
+            "id":3,
+            "date":1655545800000,
+            "rating1":2,
+            "rating2":2,
+            "name":"최혜정",
+            "text":"사이즈가 좀 작게 나온 거 같아요"
+          },
+          {
+            "id":4,
+            "date":1679677700000,
+            "rating1":2,
+            "rating2":2,
+            "name":"문동은",
+            "text":"사이즈가 조금 작아서 교환해야 할 듯.."
+          },
+          {
+            "id":5,
+            "date":1645671500000,
+            "rating1":3,
+            "rating2":3,
+            "name":"김태연",
+            "text":"무난합니다"
+          },
+          {
+            "id":6,
+            "date":1676837200000,
+            "rating1":5,
+            "rating2":5,
+            "name":"서주현",
+            "text":"예뻐요~"
+          },
+          {
+            "id":7,
+            "date":1683080500000,
+            "rating1":1,
+            "rating2":1,
+            "name":"최수영",
+            "text":"불량품이 왔어요ㅠ"
+          }
+        ]
   }
 ]

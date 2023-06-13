@@ -6,23 +6,10 @@ export function courseByDetail(data,courseDetail){
 
 
 
-// const CartList_KEY = 'addedItem' ;
-// const addedItem = JSON.parse(sessionStorage.getItem(CartList_KEY) || '{}');
-
-// export function addToCart(courseDetail){
-//   // addedItem[courseDetail]
-//   sessionStorage.setItem(CartList_KEY,JSON.stringify(addedItem));
-// }
-
-// export function getCartList(){
-//   return newData.filter((data) => addedItem[data.course])
-// }
-
-
 // 카트 담기
 // options : 선택된 option들
 
-export function addToCart2(options) {
+export function addToCart(options) {
 	const list = JSON.parse(sessionStorage.getItem('cart')) || [];
 
 	if(list.length === 0) {
@@ -51,4 +38,3 @@ export function addToCart2(options) {
 		return;
 	}
 }
-
