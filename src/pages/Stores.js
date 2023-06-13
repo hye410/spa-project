@@ -8,10 +8,12 @@ import { useState } from "react";
 function Stores(){
   const [stores,setStores] = useState(store);
   const [area,setArea] = useState(1);
-  // console.log(stores);
-  // const sub = stores.regions.filter(item => item.id === Number(area)).map(item => item.subArea);
 
-  // console.log(sub)
+  const sub = stores.regions.find(item => item.id === Number(area))
+                    .subArea.forEach(item => console.log(item))
+                    
+
+
 
   return(
     <article id="store">
@@ -25,8 +27,9 @@ function Stores(){
         </select>
         <select name="district">
           {
-            stores.regions.filter(item => item.id === Number(area))
-                          .forEach(item => <option>{item.subArea}</option>)
+            stores.regions.find(item => item.id === Number(area))
+            .subArea.map((item,index) => <option key={index}>{item}</option>)
+            
           }
         </select>
         <p>
