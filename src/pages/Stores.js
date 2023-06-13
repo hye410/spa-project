@@ -5,25 +5,29 @@ import store from '../api/store.json';
 import { useState } from "react";
 
 
-
 function Stores(){
   const [stores,setStores] = useState(store);
-  const [area,setArea] = useState('서울');
-  
-  const selectedArea = stores.filter(item => item.area === area);
-  const subArea = selectedArea.map(({subArea}) => subArea);
+  const [area,setArea] = useState(1);
+  // console.log(stores);
+  // const sub = stores.regions.filter(item => item.id === Number(area)).map(item => item.subArea);
+
+  // console.log(sub)
+
   return(
     <article id="store">
       <h3>매장안내</h3>
       <div className="search">
 
         <select name="area" onChange={(event)=>setArea(event.target.value)}>
-          <option>서울</option>
-          <option>경기</option>
-          <option>인천</option>
+          {
+           stores.regions.map(item => <option key={item.id} value={item.id}>{item.area}</option>)
+          }
         </select>
         <select name="district">
-
+          {
+            stores.regions.filter(item => item.id === Number(area))
+                          .forEach(item => <option>{item.subArea}</option>)
+          }
         </select>
         <p>
           <input type="text" placeholder="원하시는 매장명을 검색하세요."/>
