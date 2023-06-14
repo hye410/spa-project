@@ -54,12 +54,14 @@ article#store{
   text-indent: 5px;
 }
 
-#store>div.search>p>svg{
-  width:10%;
+#store>div.search>p>span{
+  display: block;
+  width : 20px;
+  cursor: pointer;
 }
 
-article#store>.stores{
-  /* background-color: rgb(97, 130, 158); */
+#store>div.search>p>span>svg{
+  font-size: 20px;
 }
 
 article#store>.stores>h4{

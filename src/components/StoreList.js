@@ -1,11 +1,18 @@
-function StoreList(){
+import './css/StoreList.css';
+
+function StoreList({stores}){
   return(
-    <ul>
-      <li>매장이름</li>
-      <li>매장주소</li>
-      <li>영업시간</li>
-      <li>전화번호</li>
-    </ul>
+    stores.map(store => 
+      <ul key = {store.id}>
+        <li>{store.name}</li>
+        <li>{store.address}</li>
+        <li>
+          <p><span>평일</span>{store.openTime}</p>
+          <p><span>주말</span>{store.closeTime}</p></li>
+        <li>{store.call}</li>
+        <li>+</li>
+      </ul>
+    )
   )
 }
 
