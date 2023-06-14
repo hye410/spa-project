@@ -3,14 +3,15 @@
   display : flex;
   align-items: center;
   padding : 35px;
-  border-top : 1px solid #000;
-  border-bottom : 1px solid #000;
   justify-content: space-around;
   text-align: center;
+  border-top : 1px solid #c8c7c7;
+  border-bottom : 1px solid #c8c7c7;
 }
 
 .stores>ul>li {
   width : 13%;
+  color : #817f7f;
 }
 
 .stores>ul>li:nth-child(2) {
@@ -33,7 +34,7 @@
 
 .stores>ul>li>p>span{
   margin-right : 5px;
-  border : 1px solid #000;
+  border : 1px solid #c0bdbd;
   padding : 2px;
   font-size: 12px;
 }
