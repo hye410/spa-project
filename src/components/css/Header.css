@@ -7,6 +7,7 @@ header{
 
 #header{
   width : 1400px;
+  height : 100%;
   margin : 0 auto;
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,7 @@ img{
 }
 
 
-#header>ul>li:last-child>a{
+/* #header>ul>li:last-child>a{
   font-size: 30px;
   position : relative;
 }
@@ -52,4 +53,4 @@ img{
   font-size: 14px;
   top:11px;
   right:6px;
-}
+} */

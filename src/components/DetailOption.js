@@ -6,6 +6,7 @@ function DetailOption({course}){
   const [selectedColor,setSelectedColor] = useState(course.colors[0]);
   const [selectedOption,setSelectedOption] = useState([]);
   const [myOption,setMyOption] = useState([]);
+  const [render,setRender ]= useState(1);
 
   const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
 
@@ -86,6 +87,7 @@ function DetailOption({course}){
             addToCart(myOption);
             setSelectedOption([]);
             notice();
+            setRender(render + 1);
           }}
           >
             장바구니 담기

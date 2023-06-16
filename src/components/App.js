@@ -5,7 +5,9 @@ function App({children}){
   return(
     <>
       <Header />
-      <div id="wrap">{children}</div>
+      <div id="wrap">
+        {children}
+      </div>
       <Footer />
     </>
   )

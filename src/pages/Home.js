@@ -4,6 +4,7 @@ import './css/Home.css';
 import './jquery/Home-jq';
 import { TfiAngleLeft,TfiAngleRight } from "react-icons/tfi";
 
+
 function Home(){
 
   const navigate = useNavigate();

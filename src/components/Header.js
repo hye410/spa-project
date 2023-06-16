@@ -4,7 +4,6 @@ import logo from '../assets/logo.svg';
 import { BsBag } from "react-icons/bs";
 
 function Header(){
-  const getCartNum = JSON.parse(sessionStorage.getItem('cart')) || 0 ;
 
   return(
     <header>
@@ -14,14 +13,15 @@ function Header(){
           <li><Link to="/about">About</Link></li>
           <li><Link to="/stores">Store</Link></li>
           <li><Link to="/login">LogIn</Link></li>
-          <li>
+          <li><Link to="/cart">Cart</Link></li>
+          {/* <li>
             <Link to="/cart">
               <BsBag />
               <span>
                 {getCartNum.length}
               </span>  
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>
