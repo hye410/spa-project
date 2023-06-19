@@ -1,5 +1,4 @@
- /*global kakao*/
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './css/StoreList.css';
 import StoreMap from './StoreMap';
 
@@ -10,8 +9,8 @@ function StoreList({stores}){
   const [lat,setLat] = useState(37.50918790905744);
   const [lng,setLng] = useState(127.06080442852581);
   const [mapToggle,setMapToggle] = useState(false);
+  const [mapTarget,setMapTarget] = useState(1);
 
-  
   return(
     stores.map(store => {
       return(
@@ -27,16 +26,16 @@ function StoreList({stores}){
             setLat(store.latitude); 
             setLng(store.longitude);
             setMapToggle(!mapToggle);
+            setMapTarget(store.id);
           }}>
               +
           </li>
         </ul>
-        <div key={store.id+1}>
+        <div key={store.id+1} className="map">
           {
-            (mapToggle !== true) ? null 
-            :
-            
-          <StoreMap id={store.id} lat = {lat} lng = {lng}/>  
+           (mapTarget === store.id) && (mapToggle !== true) ?                       
+            <StoreMap id={store.id} lat={lat} lng={lng} /> 
+            : null
           }      
         </div>
         </>

@@ -38,3 +38,9 @@
   padding : 2px;
   font-size: 12px;
 }
+
+.map{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
