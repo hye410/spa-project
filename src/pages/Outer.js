@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import OuterProduct from '../components/OuterProduct';
 import "./css/common.css";
 import outerData from '../api/outer.json';
@@ -22,7 +22,7 @@ function Outer(){
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="products">
         <h3><Link to="/">Home</Link>/Outer</h3>
       <section>

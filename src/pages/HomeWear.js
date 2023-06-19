@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import HomeWearProduct from '../components/HomeWearProduct';
 import "./css/common.css";
 import homewearData from '../api/homewear.json';
@@ -23,7 +23,7 @@ function HomeWear(){
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="products">
         <h3><Link to="/">Home</Link>/HomeWear</h3>
       <section>

@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import BestProduct from '../components/BestProduct';
 import "./css/common.css";
 import bestData from '../api/best.json';
@@ -23,7 +23,7 @@ function Best(){
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="products">
         <h3><Link to="/">Home</Link>/Best</h3>
       <section>

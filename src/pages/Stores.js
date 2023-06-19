@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 function Stores(){
   const [area,setArea] = useState('서울');
   const [subArea,setSubArea] = useState('강남구');
-  // console.log(storeData)
+
   
   const initialStore = storeData.stores.filter(store => store.district === subArea);
   const [stores,setStores] = useState(initialStore);
@@ -23,6 +23,27 @@ function Stores(){
   useEffect(() => {
     setStores(storeData.stores.filter(store => store.district === subArea));
   },[subArea])
+
+  const onSubmitSearch = (e) => {
+    if(e.key === "Enter") {
+      setStores(
+        storeData.stores.filter(
+          store => store.name.toLowerCase().includes(searchingStore.toLowerCase())
+        )
+      );
+    }
+  };
+
+  const setUpStoreList = () => {
+    searchingStore === '' ? 
+      alert('매장명을 입력해주세요.') 
+    : setStores(
+      storeData.stores.filter(
+        store => store.name.toLowerCase().includes(searchingStore.toLowerCase())
+      )
+    );
+  }
+
   
   return(
     <article id="store">
@@ -58,14 +79,9 @@ function Stores(){
              setSearchingStore(e.target.value);
             }
           }
+          onKeyPress={onSubmitSearch}
           />
-          <span onClick={() => {
-            setStores(
-              storeData.stores.filter(
-                store => store.name.toLowerCase().includes(searchingStore.toLowerCase())
-              )
-            );
-          }}>
+          <span onClick={() => setUpStoreList()}>
             <CiSearch />
           </span>          
         </p>

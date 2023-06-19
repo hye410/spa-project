@@ -2,7 +2,6 @@ import $ from 'jquery';
 
 $(function(){
   pageScroll();
-  // notice();
 })
 
 function pageScroll(){
@@ -13,8 +12,3 @@ function pageScroll(){
   });
 }
 
-// function notice(){
-//   $('.ProDetail>figcaption>p>button:first-child').on('click',function(e){
-//     alert('장바구니에 물건이 담겼습니다.');
-//   })
-// }

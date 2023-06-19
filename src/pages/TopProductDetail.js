@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import DetailOption from '../components/DetailOption';
 import Review from '../components/Review';
 import './css/ProductDetail.css';
@@ -28,7 +28,7 @@ const reviewList = course.review.sort((a,b) => {return(
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="DetailPRO">
       <h3>
         <Link to="/">Home</Link>/

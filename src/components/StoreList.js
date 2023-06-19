@@ -8,7 +8,7 @@ function StoreList({stores}){
 
   const [lat,setLat] = useState(37.50918790905744);
   const [lng,setLng] = useState(127.06080442852581);
-  const [mapToggle,setMapToggle] = useState(false);
+  const [mapToggle,setMapToggle] = useState(!false);
   const [mapTarget,setMapTarget] = useState(1);
 
   return(

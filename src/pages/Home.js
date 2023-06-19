@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import './css/Home.css';
 import './jquery/Home-jq';
 import { TfiAngleLeft,TfiAngleRight } from "react-icons/tfi";
@@ -10,7 +10,7 @@ function Home(){
   const navigate = useNavigate();
   return(
     <>
-    <Nav2 />
+    <Nav />
     <div>
     <div id="box01">
       <ul className="swiper">

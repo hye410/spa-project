@@ -11,9 +11,9 @@ function LogIn(){
     <h3>회원 로그인</h3>
 
     <form action="/" method="post">
-      <label for="userId" className="hide">회원 로그인</label>
+      <label htmlFor="userId" className="hide">회원 로그인</label>
       <input type="text" id="userId" placeholder="아이디 입력" />
-      <label for="userId" className="hide">회원 비밀번호</label>
+      <label htmlFor="userId" className="hide">회원 비밀번호</label>
       <input type="password" placeholder="비밀번호 입력" />      
     </form>
     <div className="find">

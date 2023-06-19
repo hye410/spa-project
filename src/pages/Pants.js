@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import PantsProduct from '../components/PantsProduct';
 import "./css/common.css";
 import pantsData from '../api/pants.json';
@@ -22,7 +22,7 @@ function Pants(){
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="products">
         <h3><Link to="/">Home</Link>/Pants</h3>
       <section>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import './css/Header.css';
 import logo from '../assets/logo.svg';
-import { BsBag } from "react-icons/bs";
 
 function Header(){
 
@@ -14,14 +13,6 @@ function Header(){
           <li><Link to="/stores">Store</Link></li>
           <li><Link to="/login">LogIn</Link></li>
           <li><Link to="/cart">Cart</Link></li>
-          {/* <li>
-            <Link to="/cart">
-              <BsBag />
-              <span>
-                {getCartNum.length}
-              </span>  
-            </Link>
-          </li> */}
         </ul>
       </div>
     </header>

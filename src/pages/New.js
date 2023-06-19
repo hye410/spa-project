@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import NewProduct from '../components/NewProduct';
 import "./css/New.css";
 import newData from '../api/new.json';
@@ -23,7 +23,7 @@ function New(){
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="new">
         <h3><Link to="/">Home</Link>/New ARRIVALS</h3>
       <section>

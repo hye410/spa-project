@@ -1,4 +1,4 @@
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import TopProduct from '../components/TopProduct';
 import "./css/common.css";
 import topData from '../api/top.json';
@@ -23,7 +23,7 @@ function Top(){
 
   return(
     <>
-    <Nav2 />
+    <Nav />
     <article id="products">
         <h3><Link to="/">Home</Link>/Top</h3>
       <section>
