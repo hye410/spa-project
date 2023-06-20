@@ -28,14 +28,14 @@ function StoreList({stores}){
             setMapToggle(!mapToggle);
             setMapTarget(store.id);
           }}>
-              +
+            {(mapTarget === store.id) && (mapToggle !== true) ? '-' : '+'}
           </li>
         </ul>
         <div key={store.id+1} className="map">
           {
            (mapTarget === store.id) && (mapToggle !== true) ?                       
-            <StoreMap id={store.id} lat={lat} lng={lng} /> 
-            : null
+            <StoreMap key={store.id} lat={lat} lng={lng} /> 
+            : null 
           }      
         </div>
         </>

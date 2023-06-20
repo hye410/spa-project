@@ -1,2 +1,0 @@
-store에서 알게된 점
-key값을 함께 설정해야, defaultValue 가 설정됨

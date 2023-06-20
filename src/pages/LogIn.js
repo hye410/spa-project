@@ -1,9 +1,6 @@
 import './css/LogIn.css';
-import $ from 'jquery';
-import { useEffect, useState } from 'react';
 
 function LogIn(){
- 
 
   return(
     <>
@@ -23,7 +20,7 @@ function LogIn(){
       </ul>
     </div>
     <p>
-      <button type="submit">로그인</button>
+      <button type="submit" >로그인</button>
     </p>
     </article>
     </>

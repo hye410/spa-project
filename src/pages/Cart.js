@@ -43,6 +43,8 @@ function Cart(){
     }
   }
 
+
+
   useEffect(()=>{    
     sessionStorage.setItem('cart',JSON.stringify(cartList));
   },[cartList])
