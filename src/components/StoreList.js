@@ -22,7 +22,7 @@ function StoreList({stores}){
             <p><span>평일</span>{store.openTime}</p>
             <p><span>주말</span>{store.closeTime}</p></li>
           <li>{store.call}</li>
-          <li onClick={(e) => {
+          <li onClick={() => {
             setLat(store.latitude); 
             setLng(store.longitude);
             setMapToggle(!mapToggle);

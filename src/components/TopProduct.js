@@ -10,7 +10,9 @@ function TopProduct({topItem}){
       </Link>
       <figcaption>
         <dl>
-          <Link to={`/top/${topItem.course}`}><dt>{topItem.name}</dt></Link>
+          <Link to={`/top/${topItem.course}`}>
+            <dt>{topItem.name}</dt>
+          </Link>
           <dd>{topItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>

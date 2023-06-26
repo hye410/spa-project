@@ -10,7 +10,9 @@ function OuterProduct({outerItem}){
       </Link>
       <figcaption>
         <dl>
-          <Link to={`/outer/${outerItem.course}`}><dt>{outerItem.name}</dt></Link>
+          <Link to={`/outer/${outerItem.course}`}>
+            <dt>{outerItem.name}</dt>
+          </Link>
           <dd>{outerItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>

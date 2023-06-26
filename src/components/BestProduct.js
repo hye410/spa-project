@@ -10,7 +10,9 @@ function BestProduct({bestItem}){
       </Link>
       <figcaption>
         <dl>
-          <Link to={`/best/${bestItem.course}`}><dt>{bestItem.name}</dt></Link>
+          <Link to={`/best/${bestItem.course}`}>
+            <dt>{bestItem.name}</dt>
+          </Link>
           <dd>{bestItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>

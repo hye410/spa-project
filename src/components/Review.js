@@ -7,7 +7,6 @@ function Review({review}){
     const day = new Date(d);
     return `${day.getFullYear()}-${day.getMonth()+1}-${day.getDate()}`
   }
-
   
 
   return(

@@ -2,7 +2,9 @@ import { useState , useEffect } from "react";
 import { Link } from "react-router-dom";
 import MyOption from './MyOption';
 import { addToCart } from '../api/api';
+
 function DetailOption({course}){
+
   const [selectedColor,setSelectedColor] = useState(course.colors[0]);
   const [selectedOption,setSelectedOption] = useState([]);
   const [myOption,setMyOption] = useState([]);
@@ -47,19 +49,24 @@ function DetailOption({course}){
           <dd>20,000원 이상 무료배송</dd>
           <dt>색상</dt>
           <dd>
-            <select name="color" onChange={(e)=>{setSelectedColor(e.target.value)}}>
+            <select 
+            name="color" 
+            onChange={(e)=>{setSelectedColor(e.target.value)}}
+            >
               {
               course.colors.map((color,index) => 
               <option key={index}>
                 {color}
               </option>
-              )
+               )
               }
             </select>      
           </dd>
           <dt>사이즈</dt>
           <dd>
-            <select onChange={(e) => {addToOption(selectedColor,e.target.value,course.name);}}>
+            <select 
+             onChange={(e) => {addToOption(selectedColor,e.target.value,course.name);}}
+            >
               {
                 course.sizes[selectedColor].map((size,index) => 
                 <option key={index}>

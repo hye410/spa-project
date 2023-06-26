@@ -17,7 +17,7 @@ function Outer(){
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFirst = indexOfLast - postsPerPage;
 
-  const currentPost = outerData.slice(indexOfFirst,indexOfLast);
+  const currentPost = sortItems.slice(indexOfFirst,indexOfLast);
 
 
   return(
@@ -32,7 +32,7 @@ function Outer(){
           <div onClick={()=>setToggle(!toggle)}>
             정렬
             {
-              toggle == true ? 
+              toggle === true ? 
               <ul className="sort">
                 <li onClick={()=>setOrder('popularity')}>인기순</li>
                 <li onClick={()=>setOrder('recommendation')}>추천순</li>

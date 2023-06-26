@@ -10,7 +10,9 @@ function PantsProduct({pantsItem}){
       </Link>
       <figcaption>
         <dl>
-          <Link to={`/pants/${pantsItem.course}`}><dt>{pantsItem.name}</dt></Link>
+          <Link to={`/pants/${pantsItem.course}`}>
+            <dt>{pantsItem.name}</dt>
+          </Link>
           <dd>{pantsItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>

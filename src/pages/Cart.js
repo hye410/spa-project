@@ -39,7 +39,7 @@ function Cart(){
       id.forEach( item => removeItems = removeItems.filter(({id}) => id !== item));
       setCartList(removeItems);
     }else{
-      alert('선택된 상품이 없습니다.')
+      alert('선택된 상품이 없습니다.');
     }
   }
 

@@ -10,7 +10,9 @@ function HomeWearProduct({homewearItem}){
       </Link>
       <figcaption>
         <dl>
-          <Link to={`/homewear/${homewearItem.course}`}><dt>{homewearItem.name}</dt></Link>
+          <Link to={`/homewear/${homewearItem.course}`}>
+            <dt>{homewearItem.name}</dt>
+          </Link>
           <dd>{homewearItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>

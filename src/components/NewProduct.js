@@ -10,7 +10,9 @@ function NewProduct({newItem}){
       </Link>
       <figcaption>
         <dl>
-          <Link to={`/new/${newItem.course}`}><dt>{newItem.name}</dt></Link>
+          <Link to={`/new/${newItem.course}`}>
+            <dt>{newItem.name}</dt>
+          </Link>
           <dd>{newItem.price1.toLocaleString('ko-kr')}원</dd>
         </dl>
       </figcaption>

@@ -13,19 +13,19 @@ function CartProduct({setSumPrice,checkedItems,setCheckedItems,cartList,setCartL
     sessionStorage.setItem('cart',JSON.stringify(list));
   }
 
-  const sumPrice = () => {
+  const PriceOfAllItems = () => {
     return cartList.reduce((sum,item) => sum = sum += (item.price*item.num),0)
   };
   
   useEffect(()=>{
-    setSumPrice((sumPrice()));
+    setSumPrice((PriceOfAllItems()));
   },[cartList])
 
   const selectSingle = (checked,id) => {
     if(checked){
       setCheckedItems(prev => [...prev,id]);
     }else{
-      setCheckedItems(checkedItems.filter(item => item !== id))
+      setCheckedItems(checkedItems.filter(item => item !== id));
     }
   }
 
@@ -53,7 +53,7 @@ function CartProduct({setSumPrice,checkedItems,setCheckedItems,cartList,setCartL
         <span onClick={() => {
           item.num <= 1 ? item.num = 1 : item.num = item.num -1 ; 
           setRender(render-1);
-          setSumPrice((sumPrice()));
+          setSumPrice((PriceOfAllItems()));
           }}>
           -
         </span>
@@ -61,7 +61,7 @@ function CartProduct({setSumPrice,checkedItems,setCheckedItems,cartList,setCartL
         <span onClick={() => {
           item.num = item.num + 1 ; 
           setRender(render+1);
-          setSumPrice((sumPrice()));
+          setSumPrice((PriceOfAllItems()));
           }}>
           +
         </span>  

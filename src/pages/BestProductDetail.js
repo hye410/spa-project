@@ -9,6 +9,7 @@ import { useState } from 'react';
 import bestData from '../api/best.json';
 
 function BestProductDetail(){
+
   const[toggle,setToggle] = useState(false);
   const {courseDetail} = useParams();
   const course = courseByDetail(bestData,courseDetail);
@@ -47,15 +48,21 @@ const reviewList = course.review.sort((a,b) => {return(
             <li><a href="#review">&nbsp;상품리뷰</a></li>
           </ul>
         </h4>
-        <div id="proDetail"><img src={course.detailImg} alt={course.name}/></div>      
+        <div id="proDetail">
+          <img src={course.detailImg} alt={course.name}/>
+        </div>      
       </section>
 
       <section id="delivery">
-        <h4><img src="/images/delivery.png" alt="delivery" /></h4>
+        <h4>
+          <img src="/images/delivery.png" alt="delivery" />
+        </h4>
       </section>
 
       <section className="review">
-        <h4 id="review">Review<b>({course.review.length})</b></h4>
+        <h4 id="review">
+          Review<b>({course.review.length})</b>
+        </h4>
         <p>
          <span>리뷰 평점</span>
          <span>{averageRating}점<i>/5점</i></span>
@@ -76,7 +83,8 @@ const reviewList = course.review.sort((a,b) => {return(
         </div>
 
         {
-          reviewList.map((review,index) => <Review key={index} review={review}/>)
+          reviewList.map((review,index) => 
+          <Review key={index} review={review}/>)
         }     
       </section>
     </article>
