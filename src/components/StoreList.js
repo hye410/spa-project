@@ -12,7 +12,7 @@ function StoreList({stores}){
   const [mapTarget,setMapTarget] = useState(1);
 
   return(
-    stores.map(store => {
+    stores.map((store,index) => {
       return(
         <>
         <ul key = {store.id}>
@@ -31,10 +31,10 @@ function StoreList({stores}){
             {(mapTarget === store.id) && (mapToggle !== true) ? '-' : '+'}
           </li>
         </ul>
-        <div key={store.id+1} className="map">
+        <div key={index} className="map">
           {
            (mapTarget === store.id) && (mapToggle !== true) ?                       
-            <StoreMap key={store.id} lat={lat} lng={lng} /> 
+            <StoreMap lat={lat} lng={lng} /> 
             : null 
           }      
         </div>

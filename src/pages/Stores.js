@@ -9,12 +9,10 @@ import { useEffect, useState } from "react";
 function Stores(){
   const [area,setArea] = useState('서울');
   const [subArea,setSubArea] = useState('강남구');
-
   
   const initialStore = storeData.stores.filter(store => store.district === subArea);
   const [stores,setStores] = useState(initialStore);
   const [searchingStore,setSearchingStore] = useState('');
-
 
   useEffect(() => {
     setSubArea(storeData.stores.find(store => store.city === area).district);
@@ -23,6 +21,8 @@ function Stores(){
   useEffect(() => {
     setStores(storeData.stores.filter(store => store.district === subArea));
   },[subArea])
+
+
 
   const onSubmitSearch = (e) => {
     if(e.key === "Enter") {
@@ -56,7 +56,9 @@ function Stores(){
           }
         }>
           {
-           storeData.regions.map(area => <option key={area.id}>{area.area}</option>)
+           storeData.regions.map(area => 
+            <option key={area.id}>{area.area}</option>
+           )
           }
         </select>
         <select name="district" key = {subArea} defaultValue ={subArea} 

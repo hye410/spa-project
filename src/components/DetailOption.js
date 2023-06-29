@@ -11,11 +11,11 @@ function DetailOption({course}){
   const [render,setRender ]= useState(1);
 
   const ItemsInTheCart = JSON.parse(sessionStorage.getItem('cart')) || [];
+  console.log(ItemsInTheCart)
 
-
-  function addToOption(color,size,name){
+   function addToOption(color,size,name){
     let options = {
-      id :  ItemsInTheCart.length===0 ? selectedOption.length : ItemsInTheCart.length + selectedOption.length,
+      id :  ItemsInTheCart.length === 0 ? selectedOption.length : ItemsInTheCart.length + selectedOption.length,
       name : name,
       color : color,
       size : size,
@@ -25,16 +25,17 @@ function DetailOption({course}){
     };
     setSelectedOption([...selectedOption,options]);
   }
-
+ 
    useEffect(()=>{
     let filterOption = selectedOption.filter((opt,index) => selectedOption.findIndex(item => item.color === opt.color && item.size === opt.size) === index);
     setMyOption(filterOption);
   },[selectedOption]);
 
+
+
   const notice = () => {
     myOption.length === 0 ? alert('장바구니에 담을 물건이 없습니다.') : alert('장바구니에 담겼습니다.');
   }
-     
     return(
     <figure className="ProDetail">
       <img src= {course.imgByColor[selectedColor]} alt={course.name} />
@@ -50,7 +51,7 @@ function DetailOption({course}){
           <dt>색상</dt>
           <dd>
             <select 
-            name="color" 
+            name="color"
             onChange={(e)=>{setSelectedColor(e.target.value)}}
             >
               {
@@ -64,8 +65,9 @@ function DetailOption({course}){
           </dd>
           <dt>사이즈</dt>
           <dd>
-            <select 
-             onChange={(e) => {addToOption(selectedColor,e.target.value,course.name);}}
+            <select
+             onChange={(e) => {
+              addToOption(selectedColor,e.target.value,course.name)}}
             >
               {
                 course.sizes[selectedColor].map((size,index) => 
